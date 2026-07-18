@@ -1,0 +1,1216 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Rana Aventura - Videojuego educativo para ninos de primaria. Aprende letras, numeros, colores y mas jugando con nuestra rania guia.">
+    <meta name="keywords" content="juego educativo, primaria, ninos, aprender jugando, matematicas, ciencias, letras">
+    <meta name="author" content="Rana Aventura">
+    <meta property="og:title" content="Rana Aventura - Aprende Jugando">
+    <meta property="og:description" content="Videojuego educativo para ninos de primaria. Aprender nunca fue tan divertido.">
+    <meta property="og:type" content="website">
+    <title>Rana Aventura - Aprende Jugando</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&family=Fredoka:wght@300;400;500;600;700&family=Nunito:wght@300;400;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+
+    <!-- ============================================
+         NAVBAR
+         ============================================ -->
+    <header class="navbar" id="navbar">
+        <div class="container navbar__inner">
+            <a href="#" class="navbar__logo" aria-label="Rana Aventura - Inicio">
+                <svg class="navbar__logo-icon" viewBox="0 0 48 48" width="40" height="40" xmlns="http://www.w3.org/2000/svg">
+                    <ellipse cx="24" cy="28" rx="16" ry="14" fill="#4DD768"/>
+                    <ellipse cx="24" cy="30" rx="13" ry="11" fill="#2F8F4E"/>
+                    <circle cx="17" cy="20" r="7" fill="#FFFFFF"/>
+                    <circle cx="18" cy="19" r="4" fill="#08111D"/>
+                    <circle cx="19" cy="18" r="1.5" fill="#FFFFFF"/>
+                    <circle cx="31" cy="20" r="7" fill="#FFFFFF"/>
+                    <circle cx="32" cy="19" r="4" fill="#08111D"/>
+                    <circle cx="33" cy="18" r="1.5" fill="#FFFFFF"/>
+                    <path d="M18 32 Q24 38 30 32" stroke="#08111D" stroke-width="2" fill="none" stroke-linecap="round"/>
+                    <circle cx="14" cy="30" r="2.5" fill="#FFD84A" opacity="0.5"/>
+                    <circle cx="34" cy="30" r="2.5" fill="#FFD84A" opacity="0.5"/>
+                </svg>
+                <span class="navbar__logo-text">Rana Aventura</span>
+            </a>
+            <nav class="navbar__nav" id="navMenu" aria-label="Navegacion principal">
+                <ul class="navbar__links">
+                    <li><a href="#aprender" class="navbar__link">Aprender</a></li>
+                    <li><a href="#para-padres" class="navbar__link">Padres</a></li>
+                    <li><a href="#para-docentes" class="navbar__link">Docentes</a></li>
+                    <li><a href="#como-funciona" class="navbar__link">Como Funciona</a></li>
+                    <li><a href="#materias" class="navbar__link">Materias</a></li>
+                    <li><a href="#faq" class="navbar__link">FAQ</a></li>
+                </ul>
+            </nav>
+            <a href="#descargas" class="btn btn--primary btn--sm navbar__cta">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                    <polyline points="7 10 12 15 17 10"/>
+                    <line x1="12" y1="15" x2="12" y2="3"/>
+                </svg>
+                Jugar Ahora
+            </a>
+            <button class="navbar__toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- ============================================
+             HERO
+             ============================================ -->
+        <section class="hero" id="hero">
+            <div class="hero__sky">
+                <div class="hero__moon">
+                    <svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <radialGradient id="moonGlow" cx="50%" cy="50%" r="50%">
+                                <stop offset="0%" stop-color="#FFD84A" stop-opacity="0.4"/>
+                                <stop offset="100%" stop-color="#FFD84A" stop-opacity="0"/>
+                            </radialGradient>
+                            <radialGradient id="moonSurface" cx="40%" cy="35%" r="60%">
+                                <stop offset="0%" stop-color="#FFF8E1"/>
+                                <stop offset="100%" stop-color="#FFD84A"/>
+                            </radialGradient>
+                        </defs>
+                        <circle cx="60" cy="60" r="58" fill="url(#moonGlow)"/>
+                        <circle cx="60" cy="60" r="30" fill="url(#moonSurface)"/>
+                        <circle cx="50" cy="52" r="4" fill="#E8C84A" opacity="0.3"/>
+                        <circle cx="65" cy="45" r="3" fill="#E8C84A" opacity="0.25"/>
+                        <circle cx="55" cy="65" r="5" fill="#E8C84A" opacity="0.2"/>
+                    </svg>
+                </div>
+                <div class="hero__stars" id="heroStars"></div>
+            </div>
+
+            <div class="hero__mountains hero__mountains--far">
+                <svg viewBox="0 0 1440 400" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 400 L0 280 Q120 180 240 260 Q360 160 480 220 Q600 120 720 200 Q840 100 960 180 Q1080 80 1200 160 Q1320 100 1440 200 L1440 400 Z" fill="#1a1a3e" opacity="0.6"/>
+                </svg>
+            </div>
+            <div class="hero__mountains hero__mountains--mid">
+                <svg viewBox="0 0 1440 400" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 400 L0 300 Q180 200 360 280 Q540 160 720 240 Q900 140 1080 220 Q1260 160 1440 240 L1440 400 Z" fill="#2a1f4e" opacity="0.7"/>
+                </svg>
+            </div>
+            <div class="hero__mountains hero__mountains--near">
+                <svg viewBox="0 0 1440 400" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 400 L0 320 Q240 240 480 300 Q720 200 960 280 Q1200 220 1440 300 L1440 400 Z" fill="#37245F"/>
+                </svg>
+            </div>
+
+            <div class="hero__clouds">
+                <div class="hero__cloud hero__cloud--1">
+                    <svg viewBox="0 0 200 80" xmlns="http://www.w3.org/2000/svg">
+                        <ellipse cx="70" cy="50" rx="60" ry="25" fill="#C9D3E7" opacity="0.15"/>
+                        <ellipse cx="110" cy="45" rx="50" ry="30" fill="#C9D3E7" opacity="0.12"/>
+                        <ellipse cx="50" cy="55" rx="40" ry="18" fill="#C9D3E7" opacity="0.1"/>
+                    </svg>
+                </div>
+                <div class="hero__cloud hero__cloud--2">
+                    <svg viewBox="0 0 240 90" xmlns="http://www.w3.org/2000/svg">
+                        <ellipse cx="80" cy="55" rx="70" ry="28" fill="#C9D3E7" opacity="0.12"/>
+                        <ellipse cx="140" cy="50" rx="60" ry="32" fill="#C9D3E7" opacity="0.1"/>
+                        <ellipse cx="180" cy="58" rx="45" ry="22" fill="#C9D3E7" opacity="0.08"/>
+                    </svg>
+                </div>
+                <div class="hero__cloud hero__cloud--3">
+                    <svg viewBox="0 0 180 70" xmlns="http://www.w3.org/2000/svg">
+                        <ellipse cx="60" cy="45" rx="50" ry="22" fill="#C9D3E7" opacity="0.1"/>
+                        <ellipse cx="100" cy="40" rx="45" ry="25" fill="#C9D3E7" opacity="0.08"/>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="hero__fog"></div>
+
+            <div class="hero__floating-islands">
+                <div class="hero__island hero__island--1">
+                    <svg viewBox="0 0 180 100" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20 50 Q50 20 90 30 Q130 15 160 50 Q170 65 150 75 Q120 85 90 80 Q60 88 30 75 Q10 65 20 50 Z" fill="#2F8F4E"/>
+                        <path d="M30 55 Q60 35 90 40 Q120 30 145 55 Q150 62 140 68 Q110 78 90 72 Q70 80 40 68 Q25 62 30 55 Z" fill="#4DD768"/>
+                        <rect x="85" y="15" width="6" height="25" rx="2" fill="#8B5E3C"/>
+                        <circle cx="88" cy="10" r="15" fill="#2F8F4E"/>
+                        <circle cx="82" cy="15" r="10" fill="#4DD768"/>
+                        <circle cx="95" cy="13" r="12" fill="#2F8F4E" opacity="0.8"/>
+                        <circle cx="45" cy="48" r="3" fill="#FFD84A"/>
+                        <circle cx="130" cy="52" r="2.5" fill="#39C5FF"/>
+                    </svg>
+                </div>
+                <div class="hero__island hero__island--2">
+                    <svg viewBox="0 0 120 80" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15 40 Q35 15 60 25 Q85 10 105 40 Q110 52 95 58 Q70 65 60 60 Q45 68 25 58 Q10 52 15 40 Z" fill="#2F8F4E"/>
+                        <path d="M20 43 Q40 28 60 32 Q80 22 100 43 Q102 48 90 53 Q70 60 60 55 Q45 62 28 53 Q18 48 20 43 Z" fill="#4DD768"/>
+                        <ellipse cx="60" cy="22" rx="12" ry="10" fill="#2F8F4E"/>
+                        <ellipse cx="55" cy="25" rx="8" ry="7" fill="#4DD768"/>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="hero__vegetation">
+                <div class="hero__tree hero__tree--left-1">
+                    <svg viewBox="0 0 80 120" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="35" y="70" width="10" height="50" rx="3" fill="#6B3A2A"/>
+                        <ellipse cx="40" cy="50" rx="35" ry="30" fill="#2F8F4E"/>
+                        <ellipse cx="35" cy="45" rx="25" ry="22" fill="#4DD768"/>
+                        <ellipse cx="50" cy="55" rx="20" ry="18" fill="#2F8F4E" opacity="0.8"/>
+                    </svg>
+                </div>
+                <div class="hero__tree hero__tree--left-2">
+                    <svg viewBox="0 0 60 90" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="26" y="55" width="8" height="35" rx="2" fill="#6B3A2A"/>
+                        <ellipse cx="30" cy="38" rx="25" ry="22" fill="#4DD768"/>
+                        <ellipse cx="28" cy="35" rx="18" ry="15" fill="#2F8F4E"/>
+                    </svg>
+                </div>
+                <div class="hero__bush hero__bush--1">
+                    <svg viewBox="0 0 100 50" xmlns="http://www.w3.org/2000/svg">
+                        <ellipse cx="30" cy="35" rx="25" ry="15" fill="#2F8F4E"/>
+                        <ellipse cx="55" cy="30" rx="30" ry="20" fill="#4DD768"/>
+                        <ellipse cx="75" cy="35" rx="22" ry="14" fill="#2F8F4E" opacity="0.9"/>
+                        <circle cx="20" cy="28" r="3" fill="#FFD84A" opacity="0.7"/>
+                        <circle cx="70" cy="25" r="2.5" fill="#39C5FF" opacity="0.7"/>
+                        <circle cx="45" cy="22" r="2" fill="#FF6B9D" opacity="0.6"/>
+                    </svg>
+                </div>
+                <div class="hero__tree hero__tree--right-1">
+                    <svg viewBox="0 0 90 130" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="38" y="75" width="12" height="55" rx="3" fill="#6B3A2A"/>
+                        <ellipse cx="45" cy="50" rx="40" ry="35" fill="#2F8F4E"/>
+                        <ellipse cx="40" cy="45" rx="28" ry="25" fill="#4DD768"/>
+                        <ellipse cx="55" cy="55" rx="22" ry="20" fill="#2F8F4E" opacity="0.8"/>
+                    </svg>
+                </div>
+                <div class="hero__tree hero__tree--right-2">
+                    <svg viewBox="0 0 50 80" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="21" y="50" width="8" height="30" rx="2" fill="#6B3A2A"/>
+                        <ellipse cx="25" cy="35" rx="22" ry="20" fill="#4DD768"/>
+                        <ellipse cx="23" cy="32" rx="15" ry="14" fill="#2F8F4E"/>
+                    </svg>
+                </div>
+                <div class="hero__bush hero__bush--2">
+                    <svg viewBox="0 0 80 45" xmlns="http://www.w3.org/2000/svg">
+                        <ellipse cx="25" cy="30" rx="20" ry="15" fill="#4DD768"/>
+                        <ellipse cx="50" cy="28" rx="25" ry="17" fill="#2F8F4E"/>
+                        <circle cx="15" cy="25" r="2.5" fill="#FFD84A" opacity="0.6"/>
+                        <circle cx="60" cy="22" r="2" fill="#FF6B9D" opacity="0.5"/>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="hero__platforms">
+                <div class="hero__platform hero__platform--main">
+                    <svg viewBox="0 0 320 80" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="platGrad1" x1="0%" y1="0%" x2="0%" y2="100%">
+                                <stop offset="0%" stop-color="#4DD768"/>
+                                <stop offset="100%" stop-color="#2F8F4E"/>
+                            </linearGradient>
+                        </defs>
+                        <path d="M10 30 Q40 10 160 15 Q280 10 310 30 Q320 50 300 65 Q260 75 160 72 Q60 75 20 65 Q0 50 10 30 Z" fill="url(#platGrad1)"/>
+                        <path d="M15 35 Q45 20 160 22 Q275 18 305 35 Q310 45 295 55 Q260 62 160 60 Q60 62 25 55 Q10 45 15 35 Z" fill="#3a6b40" opacity="0.4"/>
+                        <path d="M30 28 L33 18 L36 28" stroke="#6bff8a" stroke-width="1.5" fill="none" opacity="0.6"/>
+                        <path d="M80 20 L83 10 L86 20" stroke="#6bff8a" stroke-width="1.5" fill="none" opacity="0.5"/>
+                        <path d="M200 18 L203 8 L206 18" stroke="#6bff8a" stroke-width="1.5" fill="none" opacity="0.6"/>
+                        <path d="M260 25 L263 15 L266 25" stroke="#6bff8a" stroke-width="1.5" fill="none" opacity="0.5"/>
+                    </svg>
+                    <div class="hero__frog">
+                        <svg viewBox="0 0 120 140" xmlns="http://www.w3.org/2000/svg">
+                            <ellipse cx="60" cy="135" rx="30" ry="5" fill="#08111D" opacity="0.3"/>
+                            <ellipse cx="60" cy="90" rx="35" ry="32" fill="#4DD768"/>
+                            <ellipse cx="60" cy="95" rx="28" ry="25" fill="#2F8F4E"/>
+                            <ellipse cx="38" cy="120" rx="14" ry="6" fill="#4DD768"/>
+                            <ellipse cx="82" cy="120" rx="14" ry="6" fill="#4DD768"/>
+                            <ellipse cx="28" cy="100" rx="8" ry="5" fill="#4DD768" transform="rotate(-20 28 100)"/>
+                            <ellipse cx="92" cy="100" rx="8" ry="5" fill="#4DD768" transform="rotate(20 92 100)"/>
+                            <ellipse cx="60" cy="55" rx="32" ry="28" fill="#4DD768"/>
+                            <ellipse cx="60" cy="58" rx="26" ry="22" fill="#3ab856"/>
+                            <circle cx="42" cy="42" r="14" fill="#FFFFFF"/>
+                            <circle cx="78" cy="42" r="14" fill="#FFFFFF"/>
+                            <circle cx="44" cy="40" r="8" fill="#08111D"/>
+                            <circle cx="80" cy="40" r="8" fill="#08111D"/>
+                            <circle cx="46" cy="37" r="3" fill="#FFFFFF"/>
+                            <circle cx="82" cy="37" r="3" fill="#FFFFFF"/>
+                            <path d="M30 30 Q42 24 52 30" stroke="#2F8F4E" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+                            <path d="M68 30 Q78 24 90 30" stroke="#2F8F4E" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+                            <path d="M45 62 Q60 75 75 62" stroke="#08111D" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+                            <circle cx="32" cy="58" r="5" fill="#FF6B9D" opacity="0.3"/>
+                            <circle cx="88" cy="58" r="5" fill="#FF6B9D" opacity="0.3"/>
+                            <polygon points="60,18 45,28 75,28" fill="#39C5FF" opacity="0.8"/>
+                            <rect x="42" y="28" width="36" height="4" rx="1" fill="#39C5FF" opacity="0.8"/>
+                            <rect x="55" y="12" width="10" height="8" fill="#39C5FF"/>
+                            <line x1="60" y1="12" x2="60" y2="6" stroke="#FFD84A" stroke-width="1.5"/>
+                            <circle cx="60" cy="5" r="2" fill="#FFD84A"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="hero__platform hero__platform--left">
+                    <svg viewBox="0 0 160 50" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5 20 Q30 5 80 10 Q130 5 155 20 Q160 35 140 42 Q110 48 80 45 Q50 48 20 42 Q0 35 5 20 Z" fill="#4DD768"/>
+                        <path d="M10 24 Q35 12 80 15 Q125 10 150 24 Q155 32 138 38 Q110 42 80 40 Q50 42 22 38 Q5 32 10 24 Z" fill="#3a6b40" opacity="0.4"/>
+                        <circle cx="80" cy="-5" r="12" fill="#FFD84A"/>
+                        <circle cx="80" cy="-5" r="9" fill="#E8B830"/>
+                        <text x="80" y="-1" text-anchor="middle" fill="#FFD84A" font-size="10" font-weight="bold">$</text>
+                    </svg>
+                </div>
+                <div class="hero__platform hero__platform--right">
+                    <svg viewBox="0 0 140 45" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5 18 Q25 5 70 8 Q115 5 135 18 Q140 30 125 36 Q100 42 70 40 Q40 42 15 36 Q0 30 5 18 Z" fill="#4DD768"/>
+                        <path d="M10 21 Q30 10 70 12 Q110 8 130 21 Q135 28 122 33 Q100 38 70 36 Q40 38 18 33 Q5 28 10 21 Z" fill="#3a6b40" opacity="0.4"/>
+                        <polygon points="70,-10 60,5 70,0 80,5" fill="#39C5FF" opacity="0.8"/>
+                        <polygon points="70,-10 65,2 70,0 75,2" fill="#7dd8ff" opacity="0.6"/>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="hero__lake">
+                <svg viewBox="0 0 1440 200" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="lakeGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                            <stop offset="0%" stop-color="#39C5FF" stop-opacity="0.3"/>
+                            <stop offset="100%" stop-color="#08111D" stop-opacity="0.8"/>
+                        </linearGradient>
+                    </defs>
+                    <path d="M0 30 Q360 0 720 20 Q1080 0 1440 30 L1440 200 L0 200 Z" fill="url(#lakeGrad)"/>
+                    <path d="M0 40 Q360 25 720 35 Q1080 25 1440 40" stroke="#39C5FF" stroke-width="1" fill="none" opacity="0.3" class="hero__wave"/>
+                    <path d="M0 60 Q360 45 720 55 Q1080 45 1440 60" stroke="#39C5FF" stroke-width="0.8" fill="none" opacity="0.2" class="hero__wave"/>
+                </svg>
+            </div>
+
+            <div class="hero__vines">
+                <svg class="hero__vine hero__vine--1" viewBox="0 0 30 200" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15 0 Q5 40 15 80 Q25 120 15 160 Q8 180 12 200" stroke="#2F8F4E" stroke-width="3" fill="none"/>
+                    <ellipse cx="8" cy="60" rx="6" ry="4" fill="#4DD768" transform="rotate(-30 8 60)"/>
+                    <ellipse cx="22" cy="100" rx="6" ry="4" fill="#4DD768" transform="rotate(25 22 100)"/>
+                    <ellipse cx="10" cy="140" rx="5" ry="3.5" fill="#4DD768" transform="rotate(-20 10 140)"/>
+                </svg>
+                <svg class="hero__vine hero__vine--2" viewBox="0 0 30 180" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15 0 Q25 35 15 70 Q5 105 15 140 Q22 160 18 180" stroke="#2F8F4E" stroke-width="2.5" fill="none"/>
+                    <ellipse cx="22" cy="50" rx="5" ry="3.5" fill="#4DD768" transform="rotate(30 22 50)"/>
+                    <ellipse cx="8" cy="90" rx="5" ry="3.5" fill="#4DD768" transform="rotate(-25 8 90)"/>
+                    <ellipse cx="20" cy="130" rx="5" ry="3" fill="#4DD768" transform="rotate(20 20 130)"/>
+                </svg>
+            </div>
+
+            <div class="hero__crystals">
+                <div class="hero__crystal hero__crystal--1">
+                    <svg viewBox="0 0 30 50" xmlns="http://www.w3.org/2000/svg">
+                        <polygon points="15,0 5,20 10,50 20,50 25,20" fill="#39C5FF" opacity="0.7"/>
+                        <polygon points="15,0 10,18 15,50 20,18" fill="#7dd8ff" opacity="0.5"/>
+                    </svg>
+                </div>
+                <div class="hero__crystal hero__crystal--2">
+                    <svg viewBox="0 0 25 40" xmlns="http://www.w3.org/2000/svg">
+                        <polygon points="12,0 3,16 7,40 18,40 22,16" fill="#37245F" opacity="0.8"/>
+                        <polygon points="12,0 8,14 12,40 16,14" fill="#5a3d8f" opacity="0.5"/>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="hero__coins">
+                <div class="hero__coin hero__coin--1">
+                    <svg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="15" cy="15" r="14" fill="#FFD84A"/>
+                        <circle cx="15" cy="15" r="11" fill="#E8B830"/>
+                        <text x="15" y="20" text-anchor="middle" fill="#FFD84A" font-size="14" font-weight="bold">$</text>
+                    </svg>
+                </div>
+                <div class="hero__coin hero__coin--2">
+                    <svg viewBox="0 0 25 25" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="12.5" cy="12.5" r="12" fill="#FFD84A"/>
+                        <circle cx="12.5" cy="12.5" r="9" fill="#E8B830"/>
+                        <text x="12.5" y="17" text-anchor="middle" fill="#FFD84A" font-size="12" font-weight="bold">$</text>
+                    </svg>
+                </div>
+                <div class="hero__coin hero__coin--3">
+                    <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="10" cy="10" r="9" fill="#FFD84A"/>
+                        <circle cx="10" cy="10" r="7" fill="#E8B830"/>
+                        <text x="10" y="14" text-anchor="middle" fill="#FFD84A" font-size="10" font-weight="bold">$</text>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="hero__fireflies" id="heroFireflies"></div>
+            <div class="hero__particles" id="heroParticles"></div>
+
+            <div class="hero__content">
+                <div class="hero__badge">
+                    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="#FFD84A" stroke-width="2">
+                        <polygon points="12,2 15,9 22,9 16.5,14 18.5,21 12,17 5.5,21 7.5,14 2,9 9,9"/>
+                    </svg>
+                    <span>Videojuego Educativo #1 para Ninos</span>
+                </div>
+                <h1 class="hero__title">
+                    Aprende Jugando con
+                    <span class="hero__title-highlight">Rana Aventura</span>
+                </h1>
+                <p class="hero__subtitle">
+                    Un mundo magico donde los ninos exploran, resuelven acertijos y dominan
+                    nuevas habilidades mientras juegan con su mejor amiga: la Rana.
+                </p>
+                <div class="hero__buttons">
+                    <a href="#descargas" class="btn btn--primary btn--lg">
+                        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                            <polyline points="7 10 12 15 17 10"/>
+                            <line x1="12" y1="15" x2="12" y2="3"/>
+                        </svg>
+                        Descargar App Mobile
+                    </a>
+                    <a href="#descargas" class="btn btn--secondary btn--lg">
+                        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                            <line x1="8" y1="21" x2="16" y2="21"/>
+                            <line x1="12" y1="17" x2="12" y2="21"/>
+                        </svg>
+                        Portal Docentes
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero__scroll-indicator">
+                <div class="hero__scroll-mouse">
+                    <div class="hero__scroll-wheel"></div>
+                </div>
+                <span>Descubre mas</span>
+            </div>
+        </section>
+
+        <!-- ============================================
+             CARACTERISTICAS
+             ============================================ -->
+        <section class="features" id="caracteristicas">
+            <div class="container">
+                <div class="section-header" data-reveal>
+                    <span class="section-tag">Por que Rana Aventura?</span>
+                    <h2 class="section-title">Una aventura que los ninos <span class="text-gradient">aman</span></h2>
+                    <p class="section-subtitle">Disenado por educadores y psicologos infantiles para ofrecer la mejor experiencia de aprendizaje.</p>
+                </div>
+                <div class="features__grid">
+                    <div class="feature-card" data-reveal>
+                        <div class="feature-card__icon">
+                            <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="32" cy="32" r="28" fill="#37245F" opacity="0.5"/>
+                                <path d="M22 42 L22 28 L32 22 L42 28 L42 42 L36 42 L36 34 L28 34 L28 42 Z" fill="#39C5FF" stroke="#7dd8ff" stroke-width="1"/>
+                                <circle cx="32" cy="20" r="4" fill="#FFD84A"/>
+                            </svg>
+                        </div>
+                        <h3 class="feature-card__title">Aventura Magica</h3>
+                        <p class="feature-card__text">Un mundo lleno de personajes adorables, escenarios magicos y desafios que mantienen a los ninos enganchados aprendiendo.</p>
+                    </div>
+                    <div class="feature-card" data-reveal>
+                        <div class="feature-card__icon">
+                            <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="32" cy="32" r="28" fill="#37245F" opacity="0.5"/>
+                                <rect x="18" y="22" width="28" height="22" rx="3" fill="none" stroke="#4DD768" stroke-width="2"/>
+                                <line x1="18" y1="30" x2="46" y2="30" stroke="#4DD768" stroke-width="1.5"/>
+                                <circle cx="24" cy="26" r="2" fill="#FF6B6B"/>
+                                <circle cx="32" cy="26" r="2" fill="#FFD84A"/>
+                                <circle cx="40" cy="26" r="2" fill="#4DD768"/>
+                                <text x="32" y="42" text-anchor="middle" fill="#C9D3E7" font-size="8" font-family="Poppins">100%</text>
+                            </svg>
+                        </div>
+                        <h3 class="feature-card__title">100% Seguro</h3>
+                        <p class="feature-card__text">Sin anuncios, sin compras in-app. Un entorno seguro y controlado donde los ninos aprenden sin preocupaciones.</p>
+                    </div>
+                    <div class="feature-card" data-reveal>
+                        <div class="feature-card__icon">
+                            <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="32" cy="32" r="28" fill="#37245F" opacity="0.5"/>
+                                <path d="M20 38 Q26 20 32 32 Q38 20 44 38" stroke="#FFD84A" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+                                <circle cx="20" cy="38" r="3" fill="#FFD84A"/>
+                                <circle cx="44" cy="38" r="3" fill="#FFD84A"/>
+                                <path d="M28 44 L36 44" stroke="#FFD84A" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <h3 class="feature-card__title">Motivacion Constante</h3>
+                        <p class="feature-card__text">Recompensas, trofeos, insignias y nuevas aventuras que mantienen la motivacion siempre alta.</p>
+                    </div>
+                    <div class="feature-card" data-reveal>
+                        <div class="feature-card__icon">
+                            <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="32" cy="32" r="28" fill="#37245F" opacity="0.5"/>
+                                <circle cx="24" cy="26" r="8" fill="none" stroke="#39C5FF" stroke-width="2"/>
+                                <circle cx="40" cy="26" r="8" fill="none" stroke="#4DD768" stroke-width="2"/>
+                                <path d="M18 40 Q32 48 46 40" stroke="#C9D3E7" stroke-width="1.5" fill="none"/>
+                                <text x="32" y="52" text-anchor="middle" fill="#C9D3E7" font-size="7" font-family="Poppins">PADRES</text>
+                            </svg>
+                        </div>
+                        <h3 class="feature-card__title">Para Padres</h3>
+                        <p class="feature-card__text">Supervisa el progreso de tus hijos, establece metas de aprendizaje y celebra sus logros juntos.</p>
+                    </div>
+                    <div class="feature-card" data-reveal>
+                        <div class="feature-card__icon">
+                            <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="32" cy="32" r="28" fill="#37245F" opacity="0.5"/>
+                                <rect x="16" y="20" width="32" height="24" rx="2" fill="none" stroke="#4DD768" stroke-width="2"/>
+                                <line x1="16" y1="28" x2="48" y2="28" stroke="#4DD768" stroke-width="1"/>
+                                <rect x="20" y="32" width="10" height="6" rx="1" fill="#39C5FF" opacity="0.6"/>
+                                <rect x="34" y="32" width="10" height="6" rx="1" fill="#4DD768" opacity="0.6"/>
+                                <rect x="20" y="38" width="24" height="2" rx="1" fill="#C9D3E7" opacity="0.4"/>
+                            </svg>
+                        </div>
+                        <h3 class="feature-card__title">Para Docentes</h3>
+                        <p class="feature-card__text">Crea lecciones personalizadas, asigna actividades y visualiza el progreso de toda tu clase en un solo lugar.</p>
+                    </div>
+                    <div class="feature-card" data-reveal>
+                        <div class="feature-card__icon">
+                            <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="32" cy="32" r="28" fill="#37245F" opacity="0.5"/>
+                                <path d="M20 44 L20 28 L26 22 L32 28 L38 22 L44 28 L44 44" stroke="#FFD84A" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                                <circle cx="20" cy="28" r="2" fill="#FFD84A"/>
+                                <circle cx="32" cy="28" r="2" fill="#FFD84A"/>
+                                <circle cx="44" cy="28" r="2" fill="#FFD84A"/>
+                                <path d="M24 44 L40 44" stroke="#FFD84A" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <h3 class="feature-card__title">Progreso Real</h3>
+                        <p class="feature-card__text">Graficos y estadisticas detalladas que muestran exactamente donde brilla tu hijo o estudiante.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================
+             APRENDER
+             ============================================ -->
+        <section class="learn" id="aprender">
+            <div class="container">
+                <div class="section-header" data-reveal>
+                    <span class="section-tag">Que aprenderan?</span>
+                    <h2 class="section-title">Materias que se sienten como <span class="text-gradient">juegos</span></h2>
+                    <p class="section-subtitle">Cada materia es una nueva aventura. Los ninos eligen que explorar y avanzan a su ritmo.</p>
+                </div>
+                <div class="learn__grid">
+                    <div class="learn-card" data-reveal>
+                        <div class="learn-card__glow"></div>
+                        <div class="learn-card__icon">
+                            <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="10" y="10" width="60" height="60" rx="15" fill="#37245F"/>
+                                <text x="40" y="52" text-anchor="middle" fill="#39C5FF" font-size="36" font-weight="700" font-family="Fredoka">Aa</text>
+                            </svg>
+                        </div>
+                        <h3 class="learn-card__title">Letras y Palabras</h3>
+                        <p class="learn-card__text">El abecedario, formar palabras, rimas y primera lectura con la Rana.</p>
+                        <div class="learn-card__levels"><span class="learn-card__level">45 niveles</span></div>
+                    </div>
+                    <div class="learn-card" data-reveal>
+                        <div class="learn-card__glow"></div>
+                        <div class="learn-card__icon">
+                            <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="10" y="10" width="60" height="60" rx="15" fill="#37245F"/>
+                                <text x="40" y="54" text-anchor="middle" fill="#FFD84A" font-size="38" font-weight="700" font-family="Fredoka">123</text>
+                            </svg>
+                        </div>
+                        <h3 class="learn-card__title">Numeros</h3>
+                        <p class="learn-card__text">Contar, sumar, restar y resolver problemas matematicos de forma divertida.</p>
+                        <div class="learn-card__levels"><span class="learn-card__level">60 niveles</span></div>
+                    </div>
+                    <div class="learn-card" data-reveal>
+                        <div class="learn-card__glow"></div>
+                        <div class="learn-card__icon">
+                            <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="10" y="10" width="60" height="60" rx="15" fill="#37245F"/>
+                                <circle cx="32" cy="35" r="10" fill="#FF6B6B" opacity="0.9"/>
+                                <circle cx="48" cy="35" r="10" fill="#39C5FF" opacity="0.9"/>
+                                <circle cx="40" cy="48" r="10" fill="#FFD84A" opacity="0.9"/>
+                            </svg>
+                        </div>
+                        <h3 class="learn-card__title">Colores</h3>
+                        <p class="learn-card__text">Identificar colores, mezclar tonos y crear arte con la paleta magica.</p>
+                        <div class="learn-card__levels"><span class="learn-card__level">30 niveles</span></div>
+                    </div>
+                    <div class="learn-card" data-reveal>
+                        <div class="learn-card__glow"></div>
+                        <div class="learn-card__icon">
+                            <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="10" y="10" width="60" height="60" rx="15" fill="#37245F"/>
+                                <path d="M30 50 Q40 30 50 50" stroke="#4DD768" stroke-width="3" fill="none"/>
+                                <circle cx="30" cy="50" r="4" fill="#4DD768"/>
+                                <circle cx="50" cy="50" r="4" fill="#4DD768"/>
+                                <circle cx="40" cy="35" r="3" fill="#FFD84A"/>
+                            </svg>
+                        </div>
+                        <h3 class="learn-card__title">Memoria</h3>
+                        <p class="learn-card__text">Juegos de memoria, secuencias y patrones que agilizan la mente.</p>
+                        <div class="learn-card__levels"><span class="learn-card__level">40 niveles</span></div>
+                    </div>
+                    <div class="learn-card" data-reveal>
+                        <div class="learn-card__glow"></div>
+                        <div class="learn-card__icon">
+                            <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="10" y="10" width="60" height="60" rx="15" fill="#37245F"/>
+                                <path d="M32 25 L32 42 L25 55 L55 55 L48 42 L48 25 Z" fill="none" stroke="#FF6B9D" stroke-width="2.5"/>
+                                <circle cx="35" cy="48" r="3" fill="#39C5FF" opacity="0.8"/>
+                                <circle cx="42" cy="50" r="2" fill="#4DD768" opacity="0.8"/>
+                                <line x1="28" y1="25" x2="52" y2="25" stroke="#FF6B9D" stroke-width="2.5" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <h3 class="learn-card__title">Ciencias Basicas</h3>
+                        <p class="learn-card__text">El cuerpo humano, los animales, el sistema solar y la naturaleza.</p>
+                        <div class="learn-card__levels"><span class="learn-card__level">35 niveles</span></div>
+                    </div>
+                    <div class="learn-card" data-reveal>
+                        <div class="learn-card__glow"></div>
+                        <div class="learn-card__icon">
+                            <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="10" y="10" width="60" height="60" rx="15" fill="#37245F"/>
+                                <polygon points="40,22 22,52 58,52" fill="none" stroke="#FFD84A" stroke-width="2.5"/>
+                                <circle cx="40" cy="45" r="12" fill="none" stroke="#39C5FF" stroke-width="2"/>
+                                <rect x="30" y="35" width="20" height="20" fill="none" stroke="#4DD768" stroke-width="2" transform="rotate(15 40 45)"/>
+                            </svg>
+                        </div>
+                        <h3 class="learn-card__title">Geometria</h3>
+                        <p class="learn-card__text">Figuras geometricas, simetria, patrones y construcciones 3D.</p>
+                        <div class="learn-card__levels"><span class="learn-card__level">25 niveles</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================
+             PARA PADRES
+             ============================================ -->
+        <section class="parents" id="para-padres">
+            <div class="container">
+                <div class="parents__layout">
+                    <div class="parents__mockup" data-reveal>
+                        <div class="phone-mockup">
+                            <div class="phone-mockup__frame">
+                                <div class="phone-mockup__notch"></div>
+                                <div class="phone-mockup__screen">
+                                    <div class="phone-screen">
+                                        <div class="phone-screen__header">
+                                            <svg viewBox="0 0 40 40" width="28" height="28">
+                                                <ellipse cx="20" cy="22" rx="14" ry="12" fill="#4DD768"/>
+                                                <circle cx="14" cy="17" r="4" fill="#FFFFFF"/>
+                                                <circle cx="15" cy="16" r="2" fill="#08111D"/>
+                                                <circle cx="26" cy="17" r="4" fill="#FFFFFF"/>
+                                                <circle cx="27" cy="16" r="2" fill="#08111D"/>
+                                                <path d="M15 27 Q20 32 25 27" stroke="#08111D" stroke-width="1.5" fill="none"/>
+                                            </svg>
+                                            <span class="phone-screen__greeting">Hola, Ana!</span>
+                                        </div>
+                                        <div class="phone-screen__progress">
+                                            <div class="phone-screen__progress-label">
+                                                <span>Nivel 12</span><span>780 / 1000 XP</span>
+                                            </div>
+                                            <div class="phone-screen__progress-bar">
+                                                <div class="phone-screen__progress-fill" style="width: 78%"></div>
+                                            </div>
+                                        </div>
+                                        <div class="phone-screen__cards">
+                                            <div class="phone-screen__card phone-screen__card--green"><span>Letras</span><small>Nivel 15</small></div>
+                                            <div class="phone-screen__card phone-screen__card--blue"><span>Numeros</span><small>Nivel 12</small></div>
+                                            <div class="phone-screen__card phone-screen__card--yellow"><span>Colores</span><small>Nivel 10</small></div>
+                                            <div class="phone-screen__card phone-screen__card--pink"><span>Ciencias</span><small>Nivel 8</small></div>
+                                        </div>
+                                        <div class="phone-screen__rewards"><span>12 estrellas</span><span>340 monedas</span></div>
+                                    </div>
+                                </div>
+                                <div class="phone-mockup__home-btn"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="parents__content" data-reveal>
+                        <span class="section-tag">Para Padres</span>
+                        <h2 class="section-title">Supervisa el aprendizaje de tus hijos</h2>
+                        <p class="section-subtitle">Descarga la app movil y acompana a tu hijo en cada paso de su aventura educativa.</p>
+                        <ul class="parents__benefits">
+                            <li class="parents__benefit">
+                                <div class="parents__benefit-icon">
+                                    <svg viewBox="0 0 24 24" width="24" height="24" fill="none"><circle cx="12" cy="12" r="10" fill="#4DD768" opacity="0.2"/><path d="M8 12 L11 15 L16 9" stroke="#4DD768" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                </div>
+                                <div><strong>Registra a tus hijos</strong><p>Crea perfiles individuales para cada nino y personaliza su experiencia.</p></div>
+                            </li>
+                            <li class="parents__benefit">
+                                <div class="parents__benefit-icon">
+                                    <svg viewBox="0 0 24 24" width="24" height="24" fill="none"><circle cx="12" cy="12" r="10" fill="#39C5FF" opacity="0.2"/><path d="M8 12 L11 15 L16 9" stroke="#39C5FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                </div>
+                                <div><strong>Accede a las lecciones</strong><p>Todas las materias disponibles para que tu hijo explore lo que mas le interese.</p></div>
+                            </li>
+                            <li class="parents__benefit">
+                                <div class="parents__benefit-icon">
+                                    <svg viewBox="0 0 24 24" width="24" height="24" fill="none"><circle cx="12" cy="12" r="10" fill="#FFD84A" opacity="0.2"/><path d="M8 12 L11 15 L16 9" stroke="#FFD84A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                </div>
+                                <div><strong>Ve su progreso</strong><p>Graficos claros que muestran el avance en cada materia.</p></div>
+                            </li>
+                            <li class="parents__benefit">
+                                <div class="parents__benefit-icon">
+                                    <svg viewBox="0 0 24 24" width="24" height="24" fill="none"><circle cx="12" cy="12" r="10" fill="#FF6B9D" opacity="0.2"/><path d="M8 12 L11 15 L16 9" stroke="#FF6B9D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                </div>
+                                <div><strong>Recompensas y logros</strong><p>Celebra cada logro y mantien la motivacion siempre alta.</p></div>
+                            </li>
+                        </ul>
+                        <div class="parents__cta">
+                            <a href="#descargas" class="btn btn--primary">
+                                <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.61 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.9 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z"/></svg>
+                                Descargar para Android
+                            </a>
+                            <a href="#descargas" class="btn btn--outline">
+                                <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M18.71,19.5C17.88,20.74 17,21.95 15.66,21.97C14.32,22 13.89,21.18 12.37,21.18C10.84,21.18 10.37,21.95 9.1,22C7.79,22.05 6.8,20.68 5.96,19.47C4.25,16.56 2.93,11.3 4.7,7.72C5.57,5.94 7.36,4.86 9.28,4.84C10.56,4.81 11.78,5.72 12.57,5.72C13.36,5.72 14.85,4.62 16.4,4.8C17.06,4.83 18.79,5.07 19.93,6.52C19.83,6.58 17.78,7.81 17.81,10.26C17.84,13.22 20.43,14.22 20.47,14.23C20.43,14.32 20.07,15.56 19.1,16.83L18.71,19.5M13,3.5C13.73,2.67 14.94,2.04 15.94,2C16.07,3.17 15.6,4.35 14.9,5.19C14.21,6.04 13.07,6.7 11.95,6.61C11.8,5.46 12.36,4.26 13,3.5Z"/></svg>
+                                Descargar para iOS
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================
+             PARA DOCENTES
+             ============================================ -->
+        <section class="teachers" id="para-docentes">
+            <div class="container">
+                <div class="teachers__layout">
+                    <div class="teachers__content" data-reveal>
+                        <span class="section-tag">Para Docentes</span>
+                        <h2 class="section-title">Gestiona tu clase de forma <span class="text-gradient">inteligente</span></h2>
+                        <p class="section-subtitle">El portal de escritorio te da control total sobre el aprendizaje de tus estudiantes.</p>
+                        <ul class="teachers__benefits">
+                            <li class="teachers__benefit">
+                                <div class="teachers__benefit-icon">
+                                    <svg viewBox="0 0 24 24" width="24" height="24" fill="none"><circle cx="12" cy="12" r="10" fill="#39C5FF" opacity="0.2"/><path d="M12 5V19M5 12H19" stroke="#39C5FF" stroke-width="2" stroke-linecap="round"/></svg>
+                                </div>
+                                <div><strong>Crear lecciones</strong><p>Disena lecciones personalizadas adaptadas al nivel de cada estudiante.</p></div>
+                            </li>
+                            <li class="teachers__benefit">
+                                <div class="teachers__benefit-icon">
+                                    <svg viewBox="0 0 24 24" width="24" height="24" fill="none"><circle cx="12" cy="12" r="10" fill="#4DD768" opacity="0.2"/><path d="M15 3H21V9M9 21H3V15" stroke="#4DD768" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                </div>
+                                <div><strong>Editar contenido</strong><p>Modifica ejercicios, agrega preguntas y ajusta la dificultad.</p></div>
+                            </li>
+                            <li class="teachers__benefit">
+                                <div class="teachers__benefit-icon">
+                                    <svg viewBox="0 0 24 24" width="24" height="24" fill="none"><circle cx="12" cy="12" r="10" fill="#FFD84A" opacity="0.2"/><path d="M9 11L12 14L22 4" stroke="#FFD84A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M21 12V19C21 20.1 20.1 21 19 21H5C3.9 21 3 20.1 3 19V5C3 3.9 3.9 3 5 3H16" stroke="#FFD84A" stroke-width="2" stroke-linecap="round"/></svg>
+                                </div>
+                                <div><strong>Crear actividades</strong><p>Genera examenes, juegos y retos personalizados para tu clase.</p></div>
+                            </li>
+                            <li class="teachers__benefit">
+                                <div class="teachers__benefit-icon">
+                                    <svg viewBox="0 0 24 24" width="24" height="24" fill="none"><circle cx="12" cy="12" r="10" fill="#FF6B9D" opacity="0.2"/><path d="M18 20V10M12 20V4M6 20V14" stroke="#FF6B9D" stroke-width="2" stroke-linecap="round"/></svg>
+                                </div>
+                                <div><strong>Estadisticas y reportes</strong><p>Visualiza el progreso de cada alumno y exporta reportes.</p></div>
+                            </li>
+                        </ul>
+                        <div class="teachers__cta">
+                            <a href="#descargas" class="btn btn--primary">
+                                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                                Descargar Portal Docente
+                            </a>
+                        </div>
+                    </div>
+                    <div class="teachers__mockup" data-reveal>
+                        <div class="monitor-mockup">
+                            <div class="monitor-mockup__screen">
+                                <div class="monitor-mockup__topbar">
+                                    <div class="monitor-mockup__dots"><span></span><span></span><span></span></div>
+                                    <span class="monitor-mockup__url">portal.ranaaventura.edu</span>
+                                </div>
+                                <div class="dashboard">
+                                    <div class="dashboard__sidebar">
+                                        <div class="dashboard__sidebar-item dashboard__sidebar-item--active">D</div>
+                                        <div class="dashboard__sidebar-item">E</div>
+                                        <div class="dashboard__sidebar-item">L</div>
+                                        <div class="dashboard__sidebar-item">A</div>
+                                        <div class="dashboard__sidebar-item">C</div>
+                                    </div>
+                                    <div class="dashboard__main">
+                                        <div class="dashboard__header"><span>Bienvenida, Profe Maria</span><span class="dashboard__date">18 Jul 2026</span></div>
+                                        <div class="dashboard__stats">
+                                            <div class="dashboard__stat"><span class="dashboard__stat-num">32</span><span class="dashboard__stat-label">Alumnos</span></div>
+                                            <div class="dashboard__stat"><span class="dashboard__stat-num">128</span><span class="dashboard__stat-label">Lecciones</span></div>
+                                            <div class="dashboard__stat"><span class="dashboard__stat-num">89%</span><span class="dashboard__stat-label">Avance</span></div>
+                                        </div>
+                                        <div class="dashboard__chart">
+                                            <div class="dashboard__chart-bar" style="height: 40%"></div>
+                                            <div class="dashboard__chart-bar" style="height: 65%"></div>
+                                            <div class="dashboard__chart-bar" style="height: 50%"></div>
+                                            <div class="dashboard__chart-bar" style="height: 80%"></div>
+                                            <div class="dashboard__chart-bar" style="height: 70%"></div>
+                                            <div class="dashboard__chart-bar" style="height: 90%"></div>
+                                            <div class="dashboard__chart-bar" style="height: 60%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="monitor-mockup__stand"></div>
+                            <div class="monitor-mockup__base"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================
+             COMO FUNCIONA
+             ============================================ -->
+        <section class="how-it-works" id="como-funciona">
+            <div class="container">
+                <div class="section-header" data-reveal>
+                    <span class="section-tag">Como funciona?</span>
+                    <h2 class="section-title">Una aventura de <span class="text-gradient">5 pasos</span></h2>
+                    <p class="section-subtitle">Desde la descarga hasta el dominio total. Un camino magico de aprendizaje.</p>
+                </div>
+                <div class="game-map">
+                    <div class="game-map__path"></div>
+                    <div class="game-map__step" data-reveal>
+                        <div class="game-map__node">
+                            <div class="game-map__node-glow"></div>
+                            <div class="game-map__node-icon">
+                                <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="8" y="6" width="32" height="36" rx="4" fill="#39C5FF" opacity="0.2"/>
+                                    <path d="M20 18 L20 30 L28 30 L28 18" stroke="#39C5FF" stroke-width="2" fill="none"/>
+                                    <path d="M16 30 L32 30" stroke="#39C5FF" stroke-width="2" stroke-linecap="round"/>
+                                    <circle cx="24" cy="14" r="3" fill="#39C5FF"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="game-map__content">
+                            <span class="game-map__number">01</span>
+                            <h3 class="game-map__title">Los padres descargan</h3>
+                            <p class="game-map__text">Descarga la app en Android o iOS y crea el perfil de tu hijo en minutos.</p>
+                        </div>
+                    </div>
+                    <div class="game-map__step game-map__step--right" data-reveal>
+                        <div class="game-map__node">
+                            <div class="game-map__node-glow"></div>
+                            <div class="game-map__node-icon">
+                                <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                                    <ellipse cx="24" cy="28" rx="14" ry="12" fill="#4DD768" opacity="0.3"/>
+                                    <circle cx="18" cy="22" r="5" fill="#FFFFFF" opacity="0.8"/>
+                                    <circle cx="19" cy="21" r="2.5" fill="#08111D"/>
+                                    <circle cx="30" cy="22" r="5" fill="#FFFFFF" opacity="0.8"/>
+                                    <circle cx="31" cy="21" r="2.5" fill="#08111D"/>
+                                    <path d="M20 32 Q24 36 28 32" stroke="#08111D" stroke-width="1.5" fill="none"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="game-map__content">
+                            <span class="game-map__number">02</span>
+                            <h3 class="game-map__title">El nino juega</h3>
+                            <p class="game-map__text">La Rana guia al nino por mundos llenos de aventuras y aprendizaje.</p>
+                        </div>
+                    </div>
+                    <div class="game-map__step" data-reveal>
+                        <div class="game-map__node">
+                            <div class="game-map__node-glow"></div>
+                            <div class="game-map__node-icon">
+                                <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="10" y="12" width="28" height="24" rx="3" fill="#FFD84A" opacity="0.2"/>
+                                    <path d="M16 20 L22 26 L32 16" stroke="#FFD84A" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <circle cx="24" cy="36" r="2" fill="#FFD84A"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="game-map__content">
+                            <span class="game-map__number">03</span>
+                            <h3 class="game-map__title">Completa actividades</h3>
+                            <p class="game-map__text">Resuelve acertijos, completa niveles y domina cada materia paso a paso.</p>
+                        </div>
+                    </div>
+                    <div class="game-map__step game-map__step--right" data-reveal>
+                        <div class="game-map__node">
+                            <div class="game-map__node-glow"></div>
+                            <div class="game-map__node-icon">
+                                <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="24" cy="20" r="10" fill="#FFD84A" opacity="0.3"/>
+                                    <polygon points="24,8 27,17 36,17 29,22 31,31 24,26 17,31 19,22 12,17 21,17" fill="#FFD84A"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="game-map__content">
+                            <span class="game-map__number">04</span>
+                            <h3 class="game-map__title">Obtiene recompensas</h3>
+                            <p class="game-map__text">Monedas, trofeos, insignias y sombreros nuevos para la Rana.</p>
+                        </div>
+                    </div>
+                    <div class="game-map__step" data-reveal>
+                        <div class="game-map__node">
+                            <div class="game-map__node-glow"></div>
+                            <div class="game-map__node-icon">
+                                <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="8" y="10" width="32" height="28" rx="3" fill="#4DD768" opacity="0.2"/>
+                                    <path d="M14 30 L14 20 M20 30 L20 16 M26 30 L26 22 M32 30 L32 14" stroke="#4DD768" stroke-width="2.5" stroke-linecap="round"/>
+                                    <circle cx="14" cy="18" r="2" fill="#39C5FF"/>
+                                    <circle cx="20" cy="14" r="2" fill="#FFD84A"/>
+                                    <circle cx="26" cy="20" r="2" fill="#4DD768"/>
+                                    <circle cx="32" cy="12" r="2" fill="#FF6B9D"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="game-map__content">
+                            <span class="game-map__number">05</span>
+                            <h3 class="game-map__title">El profesor revisa</h3>
+                            <p class="game-map__text">El docente visualiza avances, identifica areas de mejora y ajusta el plan.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================
+             MATERIAS
+             ============================================ -->
+        <section class="subjects" id="materias">
+            <div class="container">
+                <div class="section-header" data-reveal>
+                    <span class="section-tag">Materias</span>
+                    <h2 class="section-title">Todo lo que necesitan aprender, <span class="text-gradient">en un solo lugar</span></h2>
+                    <p class="section-subtitle">9 areas de conocimiento disenadas para el curriculo de primaria.</p>
+                </div>
+                <div class="subjects__grid">
+                    <div class="subject-item" data-reveal><div class="subject-item__icon">Aa</div><h3>Letras y Alfabeto</h3><p>Vocales, consonantes, silabas y primera lectura.</p></div>
+                    <div class="subject-item" data-reveal><div class="subject-item__icon">123</div><h3>Numeros y Conteo</h3><p>Del 1 al 100, conteo, comparacion y operaciones basicas.</p></div>
+                    <div class="subject-item" data-reveal><div class="subject-item__icon">RGB</div><h3>Colores y Arte</h3><p>Identificacion de colores, mezcla y creacion artistica.</p></div>
+                    <div class="subject-item" data-reveal><div class="subject-item__icon">Zoo</div><h3>Animales</h3><p>Fauna del mundo, habitats, caracteristicas y sonidos.</p></div>
+                    <div class="subject-item" data-reveal><div class="subject-item__icon">Geo</div><h3>Figuras Geometricas</h3><p>Circulos, triangulos, cuadrados y formas en 3D.</p></div>
+                    <div class="subject-item" data-reveal><div class="subject-item__icon">Mem</div><h3>Memoria</h3><p>Juegos de memoria, secuencias y patrones logicos.</p></div>
+                    <div class="subject-item" data-reveal><div class="subject-item__icon">Log</div><h3>Logica</h3><p>Secuencias, clasificacion, seriar y resolucion de problemas.</p></div>
+                    <div class="subject-item" data-reveal><div class="subject-item__icon">Cie</div><h3>Ciencias Basicas</h3><p>Naturaleza, cuerpo humano, clima y fenomenos.</p></div>
+                    <div class="subject-item" data-reveal><div class="subject-item__icon">Mat</div><h3>Problemas Matematicos</h3><p>Suma, resta, multiplicacion y division con situaciones reales.</p></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================
+             RECOMPENSAS
+             ============================================ -->
+        <section class="rewards" id="recompensas">
+            <div class="container">
+                <div class="section-header" data-reveal>
+                    <span class="section-tag">Recompensas</span>
+                    <h2 class="section-title">Cada logro es una <span class="text-gradient">celebracion</span></h2>
+                    <p class="section-subtitle">Un sistema de recompensas que mantiene a los ninos motivados y emocionados por aprender mas.</p>
+                </div>
+                <div class="rewards__grid">
+                    <div class="reward-card" data-reveal>
+                        <div class="reward-card__icon">
+                            <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="40" cy="40" r="36" fill="#FFD84A"/>
+                                <circle cx="40" cy="40" r="28" fill="#E8B830"/>
+                                <text x="40" y="48" text-anchor="middle" fill="#FFD84A" font-size="28" font-weight="700" font-family="Fredoka">$</text>
+                            </svg>
+                        </div>
+                        <h3 class="reward-card__title">Monedas Doradas</h3>
+                        <p class="reward-card__text">Gana monedas completando lecciones. Usalas para desbloquear accesorios para la Rana.</p>
+                    </div>
+                    <div class="reward-card" data-reveal>
+                        <div class="reward-card__icon">
+                            <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M25 20 L25 40 Q25 55 40 60 Q55 55 55 40 L55 20 Z" fill="#FFD84A"/>
+                                <rect x="20" y="55" width="40" height="6" rx="2" fill="#E8B830"/>
+                                <rect x="30" y="61" width="20" height="8" rx="2" fill="#C9A020"/>
+                                <path d="M25 20 Q15 20 12 30 Q9 40 20 42 L25 40" fill="#E8B830"/>
+                                <path d="M55 20 Q65 20 68 30 Q71 40 60 42 L55 40" fill="#E8B830"/>
+                                <text x="40" y="42" text-anchor="middle" fill="#FFFFFF" font-size="14" font-weight="700">*</text>
+                            </svg>
+                        </div>
+                        <h3 class="reward-card__title">Trofeos</h3>
+                        <p class="reward-card__text">Consigue trofeos al completar mundos enteros. Son prueba de tu dedicacion.</p>
+                    </div>
+                    <div class="reward-card" data-reveal>
+                        <div class="reward-card__icon">
+                            <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+                                <polygon points="40,8 47,30 70,30 52,44 58,66 40,54 22,66 28,44 10,30 33,30" fill="#FFD84A"/>
+                                <polygon points="40,16 45,30 60,30 48,40 52,56 40,48 28,56 32,40 20,30 35,30" fill="#FFE88A"/>
+                            </svg>
+                        </div>
+                        <h3 class="reward-card__title">Estrellas Brillantes</h3>
+                        <p class="reward-card__text">Acumula estrellas en cada nivel. Cuanto mas brillante, mejor lo hiciste!</p>
+                    </div>
+                    <div class="reward-card" data-reveal>
+                        <div class="reward-card__icon">
+                            <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="40" cy="32" r="22" fill="#39C5FF"/>
+                                <circle cx="40" cy="32" r="16" fill="#2BA8D9"/>
+                                <polygon points="40,54 30,48 26,58 40,52 54,58 50,48" fill="#FFD84A"/>
+                                <text x="40" y="37" text-anchor="middle" fill="#FFFFFF" font-size="16" font-weight="700">*</text>
+                            </svg>
+                        </div>
+                        <h3 class="reward-card__title">Insignias</h3>
+                        <p class="reward-card__text">Insignias especiales por dominar materias completas y superar retos.</p>
+                    </div>
+                    <div class="reward-card" data-reveal>
+                        <div class="reward-card__icon">
+                            <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+                                <ellipse cx="40" cy="50" rx="18" ry="14" fill="#4DD768"/>
+                                <circle cx="34" cy="42" r="5" fill="#FFFFFF"/>
+                                <circle cx="35" cy="41" r="2.5" fill="#08111D"/>
+                                <circle cx="46" cy="42" r="5" fill="#FFFFFF"/>
+                                <circle cx="47" cy="41" r="2.5" fill="#08111D"/>
+                                <rect x="28" y="24" width="24" height="16" rx="3" fill="#37245F"/>
+                                <rect x="22" y="38" width="36" height="4" rx="2" fill="#37245F"/>
+                                <rect x="30" y="26" width="20" height="2" rx="1" fill="#FFD84A"/>
+                            </svg>
+                        </div>
+                        <h3 class="reward-card__title">Sombreros Divertidos</h3>
+                        <p class="reward-card__text">Viste a la Rana con sombreros unicos: pirata, astronauta, mago y mas.</p>
+                    </div>
+                    <div class="reward-card" data-reveal>
+                        <div class="reward-card__icon">
+                            <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="5" y="5" width="70" height="50" rx="5" fill="#37245F" opacity="0.5"/>
+                                <circle cx="60" cy="18" r="8" fill="#FFD84A" opacity="0.6"/>
+                                <path d="M5 45 Q20 30 35 40 Q50 25 75 35 L75 55 L5 55 Z" fill="#2F8F4E" opacity="0.6"/>
+                                <path d="M5 50 Q30 38 50 45 Q65 35 75 42 L75 55 L5 55 Z" fill="#4DD768" opacity="0.5"/>
+                                <rect x="32" y="35" width="16" height="20" rx="8" fill="#FFD84A" opacity="0.8"/>
+                                <circle cx="44" cy="47" r="1.5" fill="#E8B830"/>
+                            </svg>
+                        </div>
+                        <h3 class="reward-card__title">Escenarios Nuevos</h3>
+                        <p class="reward-card__text">Desbloquea mundos nuevos: selva, oceano, espacio y mas aventuras.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================
+             ESTADISTICAS
+             ============================================ -->
+        <section class="stats" id="estadisticas">
+            <div class="container">
+                <div class="stats__grid">
+                    <div class="stat-item" data-reveal>
+                        <div class="stat-item__icon">
+                            <svg viewBox="0 0 40 40" width="40" height="40"><circle cx="20" cy="12" r="6" fill="#39C5FF" opacity="0.8"/><path d="M8 35 Q8 24 20 24 Q32 24 32 35" fill="#39C5FF" opacity="0.5"/></svg>
+                        </div>
+                        <span class="stat-item__number" data-count="15000">0</span>
+                        <span class="stat-item__suffix">+</span>
+                        <span class="stat-item__label">Ninos aprendiendo</span>
+                    </div>
+                    <div class="stat-item" data-reveal>
+                        <div class="stat-item__icon">
+                            <svg viewBox="0 0 40 40" width="40" height="40"><rect x="5" y="5" width="30" height="30" rx="5" fill="#FFD84A" opacity="0.2"/><text x="20" y="26" text-anchor="middle" fill="#FFD84A" font-size="16" font-weight="700" font-family="Fredoka">L</text></svg>
+                        </div>
+                        <span class="stat-item__number" data-count="300">0</span>
+                        <span class="stat-item__suffix">+</span>
+                        <span class="stat-item__label">Lecciones disponibles</span>
+                    </div>
+                    <div class="stat-item" data-reveal>
+                        <div class="stat-item__icon">
+                            <svg viewBox="0 0 40 40" width="40" height="40"><polygon points="20,4 24,14 35,14 26,21 29,32 20,25 11,32 14,21 5,14 16,14" fill="#4DD768" opacity="0.8"/></svg>
+                        </div>
+                        <span class="stat-item__number" data-count="98">0</span>
+                        <span class="stat-item__suffix">%</span>
+                        <span class="stat-item__label">Satisfaccion de padres</span>
+                    </div>
+                    <div class="stat-item" data-reveal>
+                        <div class="stat-item__icon">
+                            <svg viewBox="0 0 40 40" width="40" height="40"><rect x="8" y="10" width="24" height="20" rx="3" fill="#FF6B9D" opacity="0.3"/><path d="M14 20 L18 24 L26 16" stroke="#FF6B9D" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </div>
+                        <span class="stat-item__number" data-count="500">0</span>
+                        <span class="stat-item__suffix">+</span>
+                        <span class="stat-item__label">Escuelas activas</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================
+             FAQ
+             ============================================ -->
+        <section class="faq" id="faq">
+            <div class="container">
+                <div class="section-header" data-reveal>
+                    <span class="section-tag">Preguntas Frecuentes</span>
+                    <h2 class="section-title">Tienes dudas? <span class="text-gradient">Aqui las resolvemos</span></h2>
+                </div>
+                <div class="faq__list">
+                    <div class="faq__item" data-reveal>
+                        <button class="faq__question" aria-expanded="false">
+                            <span>Cual es la edad recomendada?</span>
+                            <svg class="faq__arrow" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                        </button>
+                        <div class="faq__answer"><p>Rana Aventura esta disenado para ninos de 6 a 12 anos (primaria). Los ninos de 5 anos que ya reconocen letras y numeros tambien pueden disfrutarlo con supervision.</p></div>
+                    </div>
+                    <div class="faq__item" data-reveal>
+                        <button class="faq__question" aria-expanded="false">
+                            <span>La app es gratuita?</span>
+                            <svg class="faq__arrow" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                        </button>
+                        <div class="faq__answer"><p>La app movil tiene contenido gratuito y premium. Los padres pueden acceder a las primeras lecciones sin costo. El plan premium desbloquea todo el contenido.</p></div>
+                    </div>
+                    <div class="faq__item" data-reveal>
+                        <button class="faq__question" aria-expanded="false">
+                            <span>Necesita conexion a internet?</span>
+                            <svg class="faq__arrow" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                        </button>
+                        <div class="faq__answer"><p>Las lecciones descargadas se pueden jugar sin conexion. Solo necesitas internet para sincronizar el progreso y descargar nuevo contenido.</p></div>
+                    </div>
+                    <div class="faq__item" data-reveal>
+                        <button class="faq__question" aria-expanded="false">
+                            <span>Es seguro para los ninos?</span>
+                            <svg class="faq__arrow" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                        </button>
+                        <div class="faq__answer"><p>Absolutamente. No contiene anuncios, no tiene compras in-app sin supervision, y cumple con COPPA y todas las regulaciones de proteccion infantil.</p></div>
+                    </div>
+                    <div class="faq__item" data-reveal>
+                        <button class="faq__question" aria-expanded="false">
+                            <span>Como funciona para los docentes?</span>
+                            <svg class="faq__arrow" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                        </button>
+                        <div class="faq__answer"><p>El portal de escritorio permite crear lecciones, asignar actividades, ver estadisticas y exportar reportes. Funciona en Windows, Mac y Linux.</p></div>
+                    </div>
+                    <div class="faq__item" data-reveal>
+                        <button class="faq__question" aria-expanded="false">
+                            <span>Puedo registrar a varios hijos?</span>
+                            <svg class="faq__arrow" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                        </button>
+                        <div class="faq__answer"><p>Si. Puedes crear multiples perfiles en una sola cuenta. Cada hijo tiene su propio progreso. El plan familiar soporta hasta 4 perfiles.</p></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================
+             CTA FINAL
+             ============================================ -->
+        <section class="cta-section" id="descargas">
+            <div class="container">
+                <div class="cta-section__inner" data-reveal>
+                    <div class="cta-section__decorations">
+                        <div class="cta-section__deco cta-section__deco--1">
+                            <svg viewBox="0 0 60 60"><polygon points="30,4 35,22 54,22 39,33 44,51 30,40 16,51 21,33 6,22 25,22" fill="#FFD84A" opacity="0.3"/></svg>
+                        </div>
+                        <div class="cta-section__deco cta-section__deco--2">
+                            <svg viewBox="0 0 40 40"><circle cx="20" cy="20" r="18" fill="#39C5FF" opacity="0.2"/></svg>
+                        </div>
+                        <div class="cta-section__deco cta-section__deco--3">
+                            <svg viewBox="0 0 50 50"><circle cx="25" cy="25" r="22" fill="#FFD84A" opacity="0.15"/></svg>
+                        </div>
+                    </div>
+                    <div class="cta-section__frog">
+                        <svg viewBox="0 0 100 110" xmlns="http://www.w3.org/2000/svg">
+                            <ellipse cx="50" cy="72" rx="28" ry="25" fill="#4DD768"/>
+                            <ellipse cx="50" cy="76" rx="22" ry="20" fill="#2F8F4E"/>
+                            <circle cx="38" cy="55" r="10" fill="#FFFFFF"/>
+                            <circle cx="39" cy="54" r="5.5" fill="#08111D"/>
+                            <circle cx="41" cy="52" r="2" fill="#FFFFFF"/>
+                            <circle cx="62" cy="55" r="10" fill="#FFFFFF"/>
+                            <circle cx="63" cy="54" r="5.5" fill="#08111D"/>
+                            <circle cx="65" cy="52" r="2" fill="#FFFFFF"/>
+                            <path d="M42 80 Q50 88 58 80" stroke="#08111D" stroke-width="2" fill="none" stroke-linecap="round"/>
+                            <circle cx="30" cy="75" r="3.5" fill="#FF6B9D" opacity="0.3"/>
+                            <circle cx="70" cy="75" r="3.5" fill="#FF6B9D" opacity="0.3"/>
+                        </svg>
+                    </div>
+                    <h2 class="cta-section__title">Listo para la aventura?</h2>
+                    <p class="cta-section__text">Descarga Rana Aventura hoy y descubre un mundo donde aprender es la mejor aventura.</p>
+                    <div class="cta-section__buttons">
+                        <div class="cta-section__group">
+                            <span class="cta-section__group-label">App Mobile</span>
+                            <div class="cta-section__group-buttons">
+                                <a href="#" class="btn btn--store">
+                                    <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.61 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.9 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z"/></svg>
+                                    <div><small>Disponible en</small><strong>Google Play</strong></div>
+                                </a>
+                                <a href="#" class="btn btn--store">
+                                    <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M18.71,19.5C17.88,20.74 17,21.95 15.66,21.97C14.32,22 13.89,21.18 12.37,21.18C10.84,21.18 10.37,21.95 9.1,22C7.79,22.05 6.8,20.68 5.96,19.47C4.25,16.56 2.93,11.3 4.7,7.72C5.57,5.94 7.36,4.86 9.28,4.84C10.56,4.81 11.78,5.72 12.57,5.72C13.36,5.72 14.85,4.62 16.4,4.8C17.06,4.83 18.79,5.07 19.93,6.52C19.83,6.58 17.78,7.81 17.81,10.26C17.84,13.22 20.43,14.22 20.47,14.23C20.43,14.32 20.07,15.56 19.1,16.83L18.71,19.5M13,3.5C13.73,2.67 14.94,2.04 15.94,2C16.07,3.17 15.6,4.35 14.9,5.19C14.21,6.04 13.07,6.7 11.95,6.61C11.8,5.46 12.36,4.26 13,3.5Z"/></svg>
+                                    <div><small>Disponible en</small><strong>App Store</strong></div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="cta-section__group">
+                            <span class="cta-section__group-label">Portal Docente</span>
+                            <div class="cta-section__group-buttons">
+                                <a href="#" class="btn btn--store">
+                                    <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M3 12V6.75L9 5.43V11.91L3 12ZM20 3V11.75L10 11.97V5.21L20 3ZM3 13L9 13.09V19.9L3 18.75V13ZM10 13.21L20 13V21L10 20.79V13.21Z"/></svg>
+                                    <div><small>Descargar para</small><strong>Windows</strong></div>
+                                </a>
+                                <a href="#" class="btn btn--store">
+                                    <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M18.71,19.5C17.88,20.74 17,21.95 15.66,21.97C14.32,22 13.89,21.18 12.37,21.18C10.84,21.18 10.37,21.95 9.1,22C7.79,22.05 6.8,20.68 5.96,19.47C4.25,16.56 2.93,11.3 4.7,7.72C5.57,5.94 7.36,4.86 9.28,4.84C10.56,4.81 11.78,5.72 12.57,5.72C13.36,5.72 14.85,4.62 16.4,4.8C17.06,4.83 18.79,5.07 19.93,6.52C19.83,6.58 17.78,7.81 17.81,10.26C17.84,13.22 20.43,14.22 20.47,14.23C20.43,14.32 20.07,15.56 19.1,16.83L18.71,19.5M13,3.5C13.73,2.67 14.94,2.04 15.94,2C16.07,3.17 15.6,4.35 14.9,5.19C14.21,6.04 13.07,6.7 11.95,6.61C11.8,5.46 12.36,4.26 13,3.5Z"/></svg>
+                                    <div><small>Descargar para</small><strong>Mac</strong></div>
+                                </a>
+                                <a href="#" class="btn btn--store">
+                                    <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><circle cx="12" cy="12" r="10"/></svg>
+                                    <div><small>Descargar para</small><strong>Linux</strong></div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ============================================
+         FOOTER
+         ============================================ -->
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer__top">
+                <div class="footer__brand">
+                    <a href="#" class="footer__logo" aria-label="Rana Aventura">
+                        <svg viewBox="0 0 48 48" width="36" height="36" xmlns="http://www.w3.org/2000/svg">
+                            <ellipse cx="24" cy="28" rx="16" ry="14" fill="#4DD768"/>
+                            <ellipse cx="24" cy="30" rx="13" ry="11" fill="#2F8F4E"/>
+                            <circle cx="17" cy="20" r="7" fill="#FFFFFF"/>
+                            <circle cx="18" cy="19" r="4" fill="#08111D"/>
+                            <circle cx="19" cy="18" r="1.5" fill="#FFFFFF"/>
+                            <circle cx="31" cy="20" r="7" fill="#FFFFFF"/>
+                            <circle cx="32" cy="19" r="4" fill="#08111D"/>
+                            <circle cx="33" cy="18" r="1.5" fill="#FFFFFF"/>
+                            <path d="M18 32 Q24 38 30 32" stroke="#08111D" stroke-width="2" fill="none" stroke-linecap="round"/>
+                        </svg>
+                        <span>Rana Aventura</span>
+                    </a>
+                    <p class="footer__tagline">Aprender nunca fue tan divertido.</p>
+                    <div class="footer__social">
+                        <a href="#" class="footer__social-link" aria-label="Facebook"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 2.04C6.5 2.04 2 6.53 2 12.06C2 17.06 5.66 21.21 10.44 21.96V14.96H7.9V12.06H10.44V9.85C10.44 7.34 11.93 5.96 14.22 5.96C15.31 5.96 16.45 6.15 16.45 6.15V8.62H15.19C13.95 8.62 13.56 9.39 13.56 10.18V12.06H16.34L15.89 14.96H13.56V21.96A10 10 0 0 0 22 12.06C22 6.53 17.5 2.04 12 2.04Z"/></svg></a>
+                        <a href="#" class="footer__social-link" aria-label="Instagram"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M7.8 2H16.2C19.4 2 22 4.6 22 7.8V16.2C22 19.4 19.4 22 16.2 22H7.8C4.6 22 2 19.4 2 16.2V7.8C2 4.6 4.6 2 7.8 2ZM7.6 4C5.61 4 4 5.61 4 7.6V16.4C4 18.39 5.61 20 7.6 20H16.4C18.39 20 20 18.39 20 16.4V7.6C20 5.61 18.39 4 16.4 4H7.6ZM17.25 5.5C17.94 5.5 18.5 6.06 18.5 6.75C18.5 7.44 17.94 8 17.25 8C16.56 8 16 7.44 16 6.75C16 6.06 16.56 5.5 17.25 5.5ZM12 7C14.76 7 17 9.24 17 12C17 14.76 14.76 17 12 17C9.24 17 7 14.76 7 12C7 9.24 9.24 7 12 7ZM12 9C10.35 9 9 10.35 9 12C9 13.65 10.35 15 12 15C13.65 15 15 13.65 15 12C15 10.35 13.65 9 12 9Z"/></svg></a>
+                        <a href="#" class="footer__social-link" aria-label="YouTube"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M10 15L15.19 12L10 9V15ZM21.56 7.17C21.69 7.64 21.78 8.27 21.84 9.07C21.91 9.87 21.94 10.56 21.94 11.16L22 12C22 14.19 21.84 15.8 21.56 16.83C21.31 17.73 20.73 18.31 19.83 18.56C19.36 18.69 18.5 18.78 17.18 18.84C15.88 18.91 14.69 18.94 13.59 18.94L12 19C7.81 19 5.2 18.84 4.17 18.56C3.27 18.31 2.69 17.73 2.44 16.83C2.31 16.36 2.22 15.73 2.16 14.93C2.09 14.13 2.06 13.44 2.06 12.84L2 12C2 9.81 2.16 8.2 2.44 7.17C2.69 6.27 3.27 5.69 4.17 5.44C4.64 5.31 5.5 5.22 6.82 5.16C8.12 5.09 9.31 5.06 10.41 5.06L12 5C16.19 5 18.8 5.16 19.83 5.44C20.73 5.69 21.31 6.27 21.56 7.17Z"/></svg></a>
+                    </div>
+                </div>
+                <div class="footer__links">
+                    <div class="footer__column">
+                        <h4>Producto</h4>
+                        <ul>
+                            <li><a href="#caracteristicas">Caracteristicas</a></li>
+                            <li><a href="#materias">Materias</a></li>
+                            <li><a href="#recompensas">Recompensas</a></li>
+                            <li><a href="#descargas">Descargas</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__column">
+                        <h4>Compania</h4>
+                        <ul>
+                            <li><a href="#">Sobre nosotros</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Prensa</a></li>
+                            <li><a href="#">Contacto</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__column">
+                        <h4>Soporte</h4>
+                        <ul>
+                            <li><a href="#faq">FAQ</a></li>
+                            <li><a href="#">Ayuda</a></li>
+                            <li><a href="#">Privacidad</a></li>
+                            <li><a href="#">Terminos</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2026 Rana Aventura. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/particles.js"></script>
+    <script src="assets/js/parallax.js"></script>
+</body>
+</html>
