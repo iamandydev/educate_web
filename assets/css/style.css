@@ -2560,6 +2560,14 @@ section {
   display: flex;
 }
 
+.navbar__link--active {
+  color: var(--white);
+}
+
+.navbar__link--active::after {
+  width: 100%;
+}
+
 /* ----------------------------------------
    TIPOGRAFIA - Jerarquia mejorada
    ---------------------------------------- */
