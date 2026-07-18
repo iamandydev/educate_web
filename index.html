@@ -26,17 +26,29 @@
         <div class="container navbar__inner">
             <a href="#" class="navbar__logo" aria-label="Rana Aventura - Inicio">
                 <svg class="navbar__logo-icon" viewBox="0 0 48 48" width="40" height="40" xmlns="http://www.w3.org/2000/svg">
-                    <ellipse cx="24" cy="28" rx="16" ry="14" fill="#4DD768"/>
-                    <ellipse cx="24" cy="30" rx="13" ry="11" fill="#2F8F4E"/>
-                    <circle cx="17" cy="20" r="7" fill="#FFFFFF"/>
-                    <circle cx="18" cy="19" r="4" fill="#08111D"/>
-                    <circle cx="19" cy="18" r="1.5" fill="#FFFFFF"/>
-                    <circle cx="31" cy="20" r="7" fill="#FFFFFF"/>
-                    <circle cx="32" cy="19" r="4" fill="#08111D"/>
-                    <circle cx="33" cy="18" r="1.5" fill="#FFFFFF"/>
-                    <path d="M18 32 Q24 38 30 32" stroke="#08111D" stroke-width="2" fill="none" stroke-linecap="round"/>
-                    <circle cx="14" cy="30" r="2.5" fill="#FFD84A" opacity="0.5"/>
-                    <circle cx="34" cy="30" r="2.5" fill="#FFD84A" opacity="0.5"/>
+                    <defs>
+                        <radialGradient id="navFrogBody" cx="50%" cy="40%" r="55%">
+                            <stop offset="0%" stop-color="#5AE87A"/>
+                            <stop offset="100%" stop-color="#4DD768"/>
+                        </radialGradient>
+                        <radialGradient id="navFrogCheek" cx="50%" cy="50%" r="50%">
+                            <stop offset="0%" stop-color="#FF6B9D" stop-opacity="0.45"/>
+                            <stop offset="100%" stop-color="#FF6B9D" stop-opacity="0"/>
+                        </radialGradient>
+                    </defs>
+                    <ellipse cx="24" cy="30" rx="16" ry="14" fill="url(#navFrogBody)"/>
+                    <ellipse cx="24" cy="32" rx="13" ry="11" fill="#2F8F4E"/>
+                    <circle cx="17" cy="21" r="7" fill="#FFFFFF"/>
+                    <circle cx="31" cy="21" r="7" fill="#FFFFFF"/>
+                    <circle cx="18" cy="20" r="4" fill="#08111D"/>
+                    <circle cx="32" cy="20" r="4" fill="#08111D"/>
+                    <circle cx="19.5" cy="18.5" r="1.5" fill="#FFFFFF"/>
+                    <circle cx="33.5" cy="18.5" r="1.5" fill="#FFFFFF"/>
+                    <circle cx="17" cy="21" r="0.8" fill="#FFFFFF" opacity="0.4"/>
+                    <circle cx="31" cy="21" r="0.8" fill="#FFFFFF" opacity="0.4"/>
+                    <path d="M17 34 Q24 40 31 34" stroke="#08111D" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+                    <circle cx="13" cy="32" r="3" fill="url(#navFrogCheek)"/>
+                    <circle cx="35" cy="32" r="3" fill="url(#navFrogCheek)"/>
                 </svg>
                 <span class="navbar__logo-text">Rana Aventura</span>
             </a>
@@ -89,7 +101,28 @@
                         <circle cx="55" cy="65" r="5" fill="#E8C84A" opacity="0.2"/>
                     </svg>
                 </div>
-                <div class="hero__stars" id="heroStars"></div>
+                <div class="hero__stars" id="heroStars">
+                    <svg class="hero__star" style="left:5%;top:12%;width:3px;height:3px" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg"><circle cx="5" cy="5" r="4" fill="#FFFFFF"/></svg>
+                    <svg class="hero__star" style="left:15%;top:8%;width:2px;height:2px" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg"><circle cx="5" cy="5" r="4" fill="#FFFFFF" opacity="0.6"/></svg>
+                    <svg class="hero__star" style="left:22%;top:18%;width:4px;height:4px" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg"><circle cx="5" cy="5" r="4" fill="#FFFFFF"/></svg>
+                    <svg class="hero__star" style="left:30%;top:5%;width:2px;height:2px" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg"><circle cx="5" cy="5" r="4" fill="#C9D3E7" opacity="0.5"/></svg>
+                    <svg class="hero__star" style="left:38%;top:14%;width:3px;height:3px" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg"><circle cx="5" cy="5" r="4" fill="#FFFFFF"/></svg>
+                    <svg class="hero__star" style="left:45%;top:3%;width:2px;height:2px" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg"><circle cx="5" cy="5" r="4" fill="#FFFFFF" opacity="0.7"/></svg>
+                    <svg class="hero__star" style="left:52%;top:20%;width:3px;height:3px" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg"><circle cx="5" cy="5" r="4" fill="#FFFFFF"/></svg>
+                    <svg class="hero__star" style="left:58%;top:9%;width:2px;height:2px" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg"><circle cx="5" cy="5" r="4" fill="#C9D3E7" opacity="0.5"/></svg>
+                    <svg class="hero__star" style="left:65%;top:16%;width:4px;height:4px" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg"><circle cx="5" cy="5" r="4" fill="#FFFFFF"/></svg>
+                    <svg class="hero__star" style="left:72%;top:6%;width:2px;height:2px" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg"><circle cx="5" cy="5" r="4" fill="#FFFFFF" opacity="0.6"/></svg>
+                    <svg class="hero__star" style="left:78%;top:22%;width:3px;height:3px" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg"><circle cx="5" cy="5" r="4" fill="#FFFFFF"/></svg>
+                    <svg class="hero__star" style="left:85%;top:11%;width:2px;height:2px" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg"><circle cx="5" cy="5" r="4" fill="#C9D3E7" opacity="0.5"/></svg>
+                    <svg class="hero__star" style="left:92%;top:4%;width:3px;height:3px" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg"><circle cx="5" cy="5" r="4" fill="#FFFFFF"/></svg>
+                    <svg class="hero__star" style="left:10%;top:25%;width:2px;height:2px" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg"><circle cx="5" cy="5" r="4" fill="#FFFFFF" opacity="0.7"/></svg>
+                    <svg class="hero__star" style="left:35%;top:28%;width:3px;height:3px" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg"><circle cx="5" cy="5" r="4" fill="#FFFFFF"/></svg>
+                    <svg class="hero__star" style="left:50%;top:30%;width:2px;height:2px" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg"><circle cx="5" cy="5" r="4" fill="#C9D3E7" opacity="0.5"/></svg>
+                    <svg class="hero__star" style="left:68%;top:26%;width:3px;height:3px" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg"><circle cx="5" cy="5" r="4" fill="#FFFFFF"/></svg>
+                    <svg class="hero__star" style="left:82%;top:15%;width:2px;height:2px" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg"><circle cx="5" cy="5" r="4" fill="#FFFFFF" opacity="0.6"/></svg>
+                    <svg class="hero__star" style="left:25%;top:35%;width:2px;height:2px" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg"><circle cx="5" cy="5" r="4" fill="#C9D3E7" opacity="0.4"/></svg>
+                    <svg class="hero__star" style="left:60%;top:33%;width:2px;height:2px" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg"><circle cx="5" cy="5" r="4" fill="#FFFFFF" opacity="0.5"/></svg>
+                </div>
             </div>
 
             <div class="hero__mountains hero__mountains--far">
@@ -224,32 +257,107 @@
                         <path d="M260 25 L263 15 L266 25" stroke="#6bff8a" stroke-width="1.5" fill="none" opacity="0.5"/>
                     </svg>
                     <div class="hero__frog">
-                        <svg viewBox="0 0 120 140" xmlns="http://www.w3.org/2000/svg">
-                            <ellipse cx="60" cy="135" rx="30" ry="5" fill="#08111D" opacity="0.3"/>
-                            <ellipse cx="60" cy="90" rx="35" ry="32" fill="#4DD768"/>
-                            <ellipse cx="60" cy="95" rx="28" ry="25" fill="#2F8F4E"/>
-                            <ellipse cx="38" cy="120" rx="14" ry="6" fill="#4DD768"/>
-                            <ellipse cx="82" cy="120" rx="14" ry="6" fill="#4DD768"/>
-                            <ellipse cx="28" cy="100" rx="8" ry="5" fill="#4DD768" transform="rotate(-20 28 100)"/>
-                            <ellipse cx="92" cy="100" rx="8" ry="5" fill="#4DD768" transform="rotate(20 92 100)"/>
-                            <ellipse cx="60" cy="55" rx="32" ry="28" fill="#4DD768"/>
-                            <ellipse cx="60" cy="58" rx="26" ry="22" fill="#3ab856"/>
-                            <circle cx="42" cy="42" r="14" fill="#FFFFFF"/>
-                            <circle cx="78" cy="42" r="14" fill="#FFFFFF"/>
-                            <circle cx="44" cy="40" r="8" fill="#08111D"/>
-                            <circle cx="80" cy="40" r="8" fill="#08111D"/>
-                            <circle cx="46" cy="37" r="3" fill="#FFFFFF"/>
-                            <circle cx="82" cy="37" r="3" fill="#FFFFFF"/>
-                            <path d="M30 30 Q42 24 52 30" stroke="#2F8F4E" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-                            <path d="M68 30 Q78 24 90 30" stroke="#2F8F4E" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-                            <path d="M45 62 Q60 75 75 62" stroke="#08111D" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-                            <circle cx="32" cy="58" r="5" fill="#FF6B9D" opacity="0.3"/>
-                            <circle cx="88" cy="58" r="5" fill="#FF6B9D" opacity="0.3"/>
-                            <polygon points="60,18 45,28 75,28" fill="#39C5FF" opacity="0.8"/>
-                            <rect x="42" y="28" width="36" height="4" rx="1" fill="#39C5FF" opacity="0.8"/>
-                            <rect x="55" y="12" width="10" height="8" fill="#39C5FF"/>
-                            <line x1="60" y1="12" x2="60" y2="6" stroke="#FFD84A" stroke-width="1.5"/>
-                            <circle cx="60" cy="5" r="2" fill="#FFD84A"/>
+                        <svg viewBox="0 0 140 160" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <radialGradient id="frogBody" cx="50%" cy="40%" r="55%">
+                                    <stop offset="0%" stop-color="#5AE87A"/>
+                                    <stop offset="100%" stop-color="#4DD768"/>
+                                </radialGradient>
+                                <radialGradient id="frogBelly" cx="50%" cy="35%" r="55%">
+                                    <stop offset="0%" stop-color="#3AB856"/>
+                                    <stop offset="100%" stop-color="#2F8F4E"/>
+                                </radialGradient>
+                                <radialGradient id="frogCheek" cx="50%" cy="50%" r="50%">
+                                    <stop offset="0%" stop-color="#FF6B9D" stop-opacity="0.5"/>
+                                    <stop offset="100%" stop-color="#FF6B9D" stop-opacity="0"/>
+                                </radialGradient>
+                                <linearGradient id="hatGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" stop-color="#4AD4FF"/>
+                                    <stop offset="100%" stop-color="#39C5FF"/>
+                                </linearGradient>
+                                <filter id="frogGlow">
+                                    <feGaussianBlur stdDeviation="2" result="blur"/>
+                                    <feMerge>
+                                        <feMergeNode in="blur"/>
+                                        <feMergeNode in="SourceGraphic"/>
+                                    </feMerge>
+                                </filter>
+                            </defs>
+
+                            <!-- Sombra en el suelo -->
+                            <ellipse cx="70" cy="152" rx="32" ry="5" fill="#08111D" opacity="0.4"/>
+
+                            <!-- PIES traseros -->
+                            <ellipse cx="42" cy="138" rx="16" ry="7" fill="#4DD768"/>
+                            <ellipse cx="42" cy="138" rx="16" ry="7" fill="#3AB856" opacity="0.3"/>
+                            <ellipse cx="98" cy="138" rx="16" ry="7" fill="#4DD768"/>
+                            <ellipse cx="98" cy="138" rx="16" ry="7" fill="#3AB856" opacity="0.3"/>
+
+                            <!-- Cuerpo -->
+                            <ellipse cx="70" cy="105" rx="38" ry="35" fill="url(#frogBody)"/>
+                            <ellipse cx="70" cy="110" rx="30" ry="28" fill="url(#frogBelly)"/>
+
+                            <!-- Manos -->
+                            <ellipse cx="30" cy="112" rx="10" ry="6" fill="#4DD768" transform="rotate(-15 30 112)"/>
+                            <ellipse cx="110" cy="112" rx="10" ry="6" fill="#4DD768" transform="rotate(15 110 112)"/>
+                            <!-- Deditos -->
+                            <circle cx="22" cy="110" r="2.5" fill="#3AB856"/>
+                            <circle cx="24" cy="115" r="2.5" fill="#3AB856"/>
+                            <circle cx="118" cy="110" r="2.5" fill="#3AB856"/>
+                            <circle cx="116" cy="115" r="2.5" fill="#3AB856"/>
+
+                            <!-- Cabeza -->
+                            <ellipse cx="70" cy="65" rx="36" ry="32" fill="url(#frogBody)"/>
+                            <ellipse cx="70" cy="68" rx="30" ry="26" fill="url(#frogBelly)" opacity="0.5"/>
+
+                            <!-- Ojos superiores (puestos arriba de la cabeza) -->
+                            <circle cx="48" cy="42" r="16" fill="#FFFFFF"/>
+                            <circle cx="92" cy="42" r="16" fill="#FFFFFF"/>
+                            <!-- Iris -->
+                            <circle cx="50" cy="40" r="9" fill="#08111D"/>
+                            <circle cx="94" cy="40" r="9" fill="#08111D"/>
+                            <!-- Brillo ojos -->
+                            <circle cx="53" cy="36" r="3.5" fill="#FFFFFF"/>
+                            <circle cx="97" cy="36" r="3.5" fill="#FFFFFF"/>
+                            <circle cx="48" cy="43" r="1.5" fill="#FFFFFF" opacity="0.6"/>
+                            <circle cx="92" cy="43" r="1.5" fill="#FFFFFF" opacity="0.6"/>
+
+                            <!-- Cejas expresivas -->
+                            <path d="M32 28 Q48 20 58 28" stroke="#2F8F4E" stroke-width="3" fill="none" stroke-linecap="round"/>
+                            <path d="M82 28 Q92 20 108 28" stroke="#2F8F4E" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+                            <!-- Nariz -->
+                            <circle cx="63" cy="56" r="1.5" fill="#2F8F4E" opacity="0.6"/>
+                            <circle cx="77" cy="56" r="1.5" fill="#2F8F4E" opacity="0.6"/>
+
+                            <!-- Boca sonriente -->
+                            <path d="M50 72 Q70 88 90 72" stroke="#08111D" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+                            <path d="M55 74 Q70 84 85 74" stroke="#2F8F4E" stroke-width="1" fill="none" opacity="0.3"/>
+
+                            <!-- Mejillas sonrojadas -->
+                            <circle cx="34" cy="68" r="6" fill="url(#frogCheek)"/>
+                            <circle cx="106" cy="68" r="6" fill="url(#frogCheek)"/>
+
+                            <!-- Birrete de graduacion -->
+                            <g filter="url(#frogGlow)">
+                                <rect x="48" y="14" width="44" height="14" rx="2" fill="url(#hatGrad)"/>
+                                <rect x="42" y="26" width="56" height="5" rx="2" fill="url(#hatGrad)"/>
+                                <!-- Pliegue del birrete -->
+                                <path d="M52 18 L70 14 L88 18" stroke="#2BA8D9" stroke-width="0.8" fill="none" opacity="0.5"/>
+                                <!-- Borde dorado -->
+                                <rect x="42" y="27" width="56" height="2" rx="1" fill="#FFD84A" opacity="0.6"/>
+                            </g>
+
+                            <!-- Borla del birrete -->
+                            <line x1="70" y1="14" x2="70" y2="6" stroke="#FFD84A" stroke-width="2"/>
+                            <circle cx="70" cy="4" r="3" fill="#FFD84A"/>
+                            <circle cx="70" cy="4" r="1.5" fill="#E8B830"/>
+
+                            <!-- Brillo magico alrededor -->
+                            <circle cx="35" cy="50" r="1.5" fill="#FFD84A" opacity="0.4" class="sparkle"/>
+                            <circle cx="105" cy="55" r="1" fill="#39C5FF" opacity="0.5" class="sparkle"/>
+                            <circle cx="55" cy="30" r="1" fill="#FFFFFF" opacity="0.3" class="sparkle"/>
+                            <circle cx="85" cy="25" r="1.2" fill="#FFD84A" opacity="0.3" class="sparkle"/>
                         </svg>
                     </div>
                 </div>
@@ -400,9 +508,23 @@
                     <div class="feature-card" data-reveal>
                         <div class="feature-card__icon">
                             <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="32" cy="32" r="28" fill="#37245F" opacity="0.5"/>
-                                <path d="M22 42 L22 28 L32 22 L42 28 L42 42 L36 42 L36 34 L28 34 L28 42 Z" fill="#39C5FF" stroke="#7dd8ff" stroke-width="1"/>
-                                <circle cx="32" cy="20" r="4" fill="#FFD84A"/>
+                                <defs>
+                                    <linearGradient id="featMagicGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                                        <stop offset="0%" stop-color="#37245F" stop-opacity="0.6"/>
+                                        <stop offset="100%" stop-color="#2a1a45" stop-opacity="0.3"/>
+                                    </linearGradient>
+                                </defs>
+                                <circle cx="32" cy="32" r="28" fill="url(#featMagicGrad)"/>
+                                <path d="M22 44 L22 28 L32 21 L42 28 L42 44 L36 44 L36 34 L28 34 L28 44 Z" fill="#39C5FF" stroke="#7dd8ff" stroke-width="0.8"/>
+                                <rect x="26" y="34" width="12" height="10" fill="#2BA8D9" opacity="0.4"/>
+                                <circle cx="32" cy="19" r="5" fill="#FFD84A"/>
+                                <circle cx="32" cy="19" r="3" fill="#FFE88A" opacity="0.6"/>
+                                <circle cx="32" cy="19" r="1.5" fill="#FFFFFF" opacity="0.5"/>
+                                <circle cx="24" cy="18" r="0.8" fill="#FFFFFF" opacity="0.4"/>
+                                <circle cx="40" cy="17" r="0.6" fill="#FFFFFF" opacity="0.3"/>
+                                <line x1="32" y1="14" x2="32" y2="10" stroke="#FFD84A" stroke-width="1" stroke-linecap="round" opacity="0.5"/>
+                                <line x1="36" y1="15" x2="39" y2="12" stroke="#FFD84A" stroke-width="1" stroke-linecap="round" opacity="0.4"/>
+                                <line x1="28" y1="15" x2="25" y2="12" stroke="#FFD84A" stroke-width="1" stroke-linecap="round" opacity="0.4"/>
                             </svg>
                         </div>
                         <h3 class="feature-card__title">Aventura Magica</h3>
@@ -411,13 +533,21 @@
                     <div class="feature-card" data-reveal>
                         <div class="feature-card__icon">
                             <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="32" cy="32" r="28" fill="#37245F" opacity="0.5"/>
+                                <defs>
+                                    <linearGradient id="featSafeGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                                        <stop offset="0%" stop-color="#37245F" stop-opacity="0.6"/>
+                                        <stop offset="100%" stop-color="#2a1a45" stop-opacity="0.3"/>
+                                    </linearGradient>
+                                </defs>
+                                <circle cx="32" cy="32" r="28" fill="url(#featSafeGrad)"/>
                                 <rect x="18" y="22" width="28" height="22" rx="3" fill="none" stroke="#4DD768" stroke-width="2"/>
                                 <line x1="18" y1="30" x2="46" y2="30" stroke="#4DD768" stroke-width="1.5"/>
-                                <circle cx="24" cy="26" r="2" fill="#FF6B6B"/>
-                                <circle cx="32" cy="26" r="2" fill="#FFD84A"/>
-                                <circle cx="40" cy="26" r="2" fill="#4DD768"/>
-                                <text x="32" y="42" text-anchor="middle" fill="#C9D3E7" font-size="8" font-family="Poppins">100%</text>
+                                <circle cx="24" cy="26" r="2.5" fill="#FF6B6B"/>
+                                <circle cx="32" cy="26" r="2.5" fill="#FFD84A"/>
+                                <circle cx="40" cy="26" r="2.5" fill="#4DD768"/>
+                                <rect x="22" y="33" width="8" height="2" rx="1" fill="#4DD768" opacity="0.5"/>
+                                <rect x="22" y="37" width="12" height="2" rx="1" fill="#4DD768" opacity="0.3"/>
+                                <text x="32" y="42" text-anchor="middle" fill="#C9D3E7" font-size="8" font-family="Poppins" font-weight="600">100%</text>
                             </svg>
                         </div>
                         <h3 class="feature-card__title">100% Seguro</h3>
@@ -426,11 +556,23 @@
                     <div class="feature-card" data-reveal>
                         <div class="feature-card__icon">
                             <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="32" cy="32" r="28" fill="#37245F" opacity="0.5"/>
-                                <path d="M20 38 Q26 20 32 32 Q38 20 44 38" stroke="#FFD84A" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-                                <circle cx="20" cy="38" r="3" fill="#FFD84A"/>
-                                <circle cx="44" cy="38" r="3" fill="#FFD84A"/>
+                                <defs>
+                                    <linearGradient id="featMotivGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                                        <stop offset="0%" stop-color="#37245F" stop-opacity="0.6"/>
+                                        <stop offset="100%" stop-color="#2a1a45" stop-opacity="0.3"/>
+                                    </linearGradient>
+                                </defs>
+                                <circle cx="32" cy="32" r="28" fill="url(#featMotivGrad)"/>
+                                <path d="M20 38 Q26 18 32 32 Q38 18 44 38" stroke="#FFD84A" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+                                <circle cx="20" cy="38" r="3.5" fill="#FFD84A"/>
+                                <circle cx="44" cy="38" r="3.5" fill="#FFD84A"/>
+                                <circle cx="20" cy="38" r="2" fill="#FFE88A" opacity="0.5"/>
+                                <circle cx="44" cy="38" r="2" fill="#FFE88A" opacity="0.5"/>
                                 <path d="M28 44 L36 44" stroke="#FFD84A" stroke-width="2" stroke-linecap="round"/>
+                                <circle cx="32" cy="22" r="2" fill="#FFD84A" opacity="0.4"/>
+                                <line x1="32" y1="18" x2="32" y2="15" stroke="#FFD84A" stroke-width="1" stroke-linecap="round" opacity="0.3"/>
+                                <line x1="28" y1="19" x2="26" y2="17" stroke="#FFD84A" stroke-width="1" stroke-linecap="round" opacity="0.2"/>
+                                <line x1="36" y1="19" x2="38" y2="17" stroke="#FFD84A" stroke-width="1" stroke-linecap="round" opacity="0.2"/>
                             </svg>
                         </div>
                         <h3 class="feature-card__title">Motivacion Constante</h3>
@@ -439,11 +581,20 @@
                     <div class="feature-card" data-reveal>
                         <div class="feature-card__icon">
                             <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="32" cy="32" r="28" fill="#37245F" opacity="0.5"/>
-                                <circle cx="24" cy="26" r="8" fill="none" stroke="#39C5FF" stroke-width="2"/>
-                                <circle cx="40" cy="26" r="8" fill="none" stroke="#4DD768" stroke-width="2"/>
-                                <path d="M18 40 Q32 48 46 40" stroke="#C9D3E7" stroke-width="1.5" fill="none"/>
-                                <text x="32" y="52" text-anchor="middle" fill="#C9D3E7" font-size="7" font-family="Poppins">PADRES</text>
+                                <defs>
+                                    <linearGradient id="featPadresGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                                        <stop offset="0%" stop-color="#37245F" stop-opacity="0.6"/>
+                                        <stop offset="100%" stop-color="#2a1a45" stop-opacity="0.3"/>
+                                    </linearGradient>
+                                </defs>
+                                <circle cx="32" cy="32" r="28" fill="url(#featPadresGrad)"/>
+                                <circle cx="24" cy="24" r="8" fill="none" stroke="#39C5FF" stroke-width="2"/>
+                                <circle cx="24" cy="24" r="3" fill="#39C5FF" opacity="0.4"/>
+                                <circle cx="40" cy="24" r="8" fill="none" stroke="#4DD768" stroke-width="2"/>
+                                <circle cx="40" cy="24" r="3" fill="#4DD768" opacity="0.4"/>
+                                <path d="M18 40 Q32 50 46 40" stroke="#C9D3E7" stroke-width="1.5" fill="none"/>
+                                <path d="M22 42 Q32 48 42 42" stroke="#C9D3E7" stroke-width="1" fill="none" opacity="0.4"/>
+                                <text x="32" y="54" text-anchor="middle" fill="#C9D3E7" font-size="7" font-family="Poppins" font-weight="500">PADRES</text>
                             </svg>
                         </div>
                         <h3 class="feature-card__title">Para Padres</h3>
@@ -452,12 +603,22 @@
                     <div class="feature-card" data-reveal>
                         <div class="feature-card__icon">
                             <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="32" cy="32" r="28" fill="#37245F" opacity="0.5"/>
-                                <rect x="16" y="20" width="32" height="24" rx="2" fill="none" stroke="#4DD768" stroke-width="2"/>
-                                <line x1="16" y1="28" x2="48" y2="28" stroke="#4DD768" stroke-width="1"/>
-                                <rect x="20" y="32" width="10" height="6" rx="1" fill="#39C5FF" opacity="0.6"/>
-                                <rect x="34" y="32" width="10" height="6" rx="1" fill="#4DD768" opacity="0.6"/>
-                                <rect x="20" y="38" width="24" height="2" rx="1" fill="#C9D3E7" opacity="0.4"/>
+                                <defs>
+                                    <linearGradient id="featDocGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                                        <stop offset="0%" stop-color="#37245F" stop-opacity="0.6"/>
+                                        <stop offset="100%" stop-color="#2a1a45" stop-opacity="0.3"/>
+                                    </linearGradient>
+                                </defs>
+                                <circle cx="32" cy="32" r="28" fill="url(#featDocGrad)"/>
+                                <rect x="16" y="18" width="32" height="24" rx="3" fill="none" stroke="#4DD768" stroke-width="2"/>
+                                <line x1="16" y1="26" x2="48" y2="26" stroke="#4DD768" stroke-width="1"/>
+                                <circle cx="20" cy="22" r="1.5" fill="#FF6B6B"/>
+                                <circle cx="25" cy="22" r="1.5" fill="#FFD84A"/>
+                                <circle cx="30" cy="22" r="1.5" fill="#4DD768"/>
+                                <rect x="20" y="30" width="10" height="6" rx="1" fill="#39C5FF" opacity="0.6"/>
+                                <rect x="34" y="30" width="10" height="6" rx="1" fill="#4DD768" opacity="0.6"/>
+                                <rect x="20" y="37" width="24" height="2" rx="1" fill="#C9D3E7" opacity="0.4"/>
+                                <rect x="20" y="41" width="16" height="2" rx="1" fill="#C9D3E7" opacity="0.25"/>
                             </svg>
                         </div>
                         <h3 class="feature-card__title">Para Docentes</h3>
@@ -466,12 +627,23 @@
                     <div class="feature-card" data-reveal>
                         <div class="feature-card__icon">
                             <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="32" cy="32" r="28" fill="#37245F" opacity="0.5"/>
-                                <path d="M20 44 L20 28 L26 22 L32 28 L38 22 L44 28 L44 44" stroke="#FFD84A" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-                                <circle cx="20" cy="28" r="2" fill="#FFD84A"/>
-                                <circle cx="32" cy="28" r="2" fill="#FFD84A"/>
-                                <circle cx="44" cy="28" r="2" fill="#FFD84A"/>
-                                <path d="M24 44 L40 44" stroke="#FFD84A" stroke-width="2" stroke-linecap="round"/>
+                                <defs>
+                                    <linearGradient id="featProgGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                                        <stop offset="0%" stop-color="#37245F" stop-opacity="0.6"/>
+                                        <stop offset="100%" stop-color="#2a1a45" stop-opacity="0.3"/>
+                                    </linearGradient>
+                                </defs>
+                                <circle cx="32" cy="32" r="28" fill="url(#featProgGrad)"/>
+                                <path d="M20 46 L20 28 L27 22 L32 28 L37 22 L44 28 L44 46" stroke="#FFD84A" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                                <circle cx="20" cy="28" r="2.5" fill="#FFD84A"/>
+                                <circle cx="27" cy="22" r="2.5" fill="#FFD84A"/>
+                                <circle cx="32" cy="28" r="2.5" fill="#FFD84A"/>
+                                <circle cx="37" cy="22" r="2.5" fill="#FFD84A"/>
+                                <circle cx="44" cy="28" r="2.5" fill="#FFD84A"/>
+                                <line x1="20" y1="46" x2="44" y2="46" stroke="#FFD84A" stroke-width="2" stroke-linecap="round"/>
+                                <rect x="22" y="40" width="4" height="6" fill="#FFE88A" opacity="0.3"/>
+                                <rect x="30" y="36" width="4" height="10" fill="#FFE88A" opacity="0.3"/>
+                                <rect x="38" y="32" width="4" height="14" fill="#FFE88A" opacity="0.3"/>
                             </svg>
                         </div>
                         <h3 class="feature-card__title">Progreso Real</h3>
@@ -496,8 +668,16 @@
                         <div class="learn-card__glow"></div>
                         <div class="learn-card__icon">
                             <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
-                                <rect x="10" y="10" width="60" height="60" rx="15" fill="#37245F"/>
+                                <defs>
+                                    <linearGradient id="learnAaGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" stop-color="#3d2a6b"/>
+                                        <stop offset="100%" stop-color="#37245F"/>
+                                    </linearGradient>
+                                </defs>
+                                <rect x="10" y="10" width="60" height="60" rx="15" fill="url(#learnAaGrad)"/>
                                 <text x="40" y="52" text-anchor="middle" fill="#39C5FF" font-size="36" font-weight="700" font-family="Fredoka">Aa</text>
+                                <circle cx="18" cy="18" r="2" fill="#39C5FF" opacity="0.3"/>
+                                <circle cx="62" cy="62" r="2" fill="#39C5FF" opacity="0.3"/>
                             </svg>
                         </div>
                         <h3 class="learn-card__title">Letras y Palabras</h3>
@@ -508,8 +688,16 @@
                         <div class="learn-card__glow"></div>
                         <div class="learn-card__icon">
                             <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
-                                <rect x="10" y="10" width="60" height="60" rx="15" fill="#37245F"/>
+                                <defs>
+                                    <linearGradient id="learn123Grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" stop-color="#3d2a6b"/>
+                                        <stop offset="100%" stop-color="#37245F"/>
+                                    </linearGradient>
+                                </defs>
+                                <rect x="10" y="10" width="60" height="60" rx="15" fill="url(#learn123Grad)"/>
                                 <text x="40" y="54" text-anchor="middle" fill="#FFD84A" font-size="38" font-weight="700" font-family="Fredoka">123</text>
+                                <circle cx="18" cy="18" r="2" fill="#FFD84A" opacity="0.3"/>
+                                <circle cx="62" cy="62" r="2" fill="#FFD84A" opacity="0.3"/>
                             </svg>
                         </div>
                         <h3 class="learn-card__title">Numeros</h3>
@@ -520,10 +708,17 @@
                         <div class="learn-card__glow"></div>
                         <div class="learn-card__icon">
                             <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
-                                <rect x="10" y="10" width="60" height="60" rx="15" fill="#37245F"/>
-                                <circle cx="32" cy="35" r="10" fill="#FF6B6B" opacity="0.9"/>
-                                <circle cx="48" cy="35" r="10" fill="#39C5FF" opacity="0.9"/>
-                                <circle cx="40" cy="48" r="10" fill="#FFD84A" opacity="0.9"/>
+                                <defs>
+                                    <linearGradient id="learnColGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" stop-color="#3d2a6b"/>
+                                        <stop offset="100%" stop-color="#37245F"/>
+                                    </linearGradient>
+                                </defs>
+                                <rect x="10" y="10" width="60" height="60" rx="15" fill="url(#learnColGrad)"/>
+                                <circle cx="32" cy="34" r="12" fill="#FF6B6B" opacity="0.85"/>
+                                <circle cx="48" cy="34" r="12" fill="#39C5FF" opacity="0.85"/>
+                                <circle cx="40" cy="48" r="12" fill="#FFD84A" opacity="0.85"/>
+                                <circle cx="40" cy="39" r="4" fill="#FFFFFF" opacity="0.15"/>
                             </svg>
                         </div>
                         <h3 class="learn-card__title">Colores</h3>
@@ -534,11 +729,20 @@
                         <div class="learn-card__glow"></div>
                         <div class="learn-card__icon">
                             <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
-                                <rect x="10" y="10" width="60" height="60" rx="15" fill="#37245F"/>
-                                <path d="M30 50 Q40 30 50 50" stroke="#4DD768" stroke-width="3" fill="none"/>
-                                <circle cx="30" cy="50" r="4" fill="#4DD768"/>
-                                <circle cx="50" cy="50" r="4" fill="#4DD768"/>
-                                <circle cx="40" cy="35" r="3" fill="#FFD84A"/>
+                                <defs>
+                                    <linearGradient id="learnMemGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" stop-color="#3d2a6b"/>
+                                        <stop offset="100%" stop-color="#37245F"/>
+                                    </linearGradient>
+                                </defs>
+                                <rect x="10" y="10" width="60" height="60" rx="15" fill="url(#learnMemGrad)"/>
+                                <path d="M30 52 Q40 28 50 52" stroke="#4DD768" stroke-width="3" fill="none" stroke-linecap="round"/>
+                                <circle cx="30" cy="52" r="5" fill="#4DD768"/>
+                                <circle cx="50" cy="52" r="5" fill="#4DD768"/>
+                                <circle cx="40" cy="34" r="4" fill="#FFD84A"/>
+                                <circle cx="40" cy="34" r="2" fill="#FFE88A" opacity="0.5"/>
+                                <circle cx="24" cy="32" r="1.5" fill="#4DD768" opacity="0.3"/>
+                                <circle cx="56" cy="32" r="1.5" fill="#4DD768" opacity="0.3"/>
                             </svg>
                         </div>
                         <h3 class="learn-card__title">Memoria</h3>
@@ -549,11 +753,18 @@
                         <div class="learn-card__glow"></div>
                         <div class="learn-card__icon">
                             <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
-                                <rect x="10" y="10" width="60" height="60" rx="15" fill="#37245F"/>
-                                <path d="M32 25 L32 42 L25 55 L55 55 L48 42 L48 25 Z" fill="none" stroke="#FF6B9D" stroke-width="2.5"/>
-                                <circle cx="35" cy="48" r="3" fill="#39C5FF" opacity="0.8"/>
-                                <circle cx="42" cy="50" r="2" fill="#4DD768" opacity="0.8"/>
-                                <line x1="28" y1="25" x2="52" y2="25" stroke="#FF6B9D" stroke-width="2.5" stroke-linecap="round"/>
+                                <defs>
+                                    <linearGradient id="learnCieGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" stop-color="#3d2a6b"/>
+                                        <stop offset="100%" stop-color="#37245F"/>
+                                    </linearGradient>
+                                </defs>
+                                <rect x="10" y="10" width="60" height="60" rx="15" fill="url(#learnCieGrad)"/>
+                                <path d="M32 22 L32 42 L25 55 L55 55 L48 42 L48 22 Z" fill="none" stroke="#FF6B9D" stroke-width="2.5"/>
+                                <circle cx="35" cy="48" r="3.5" fill="#39C5FF" opacity="0.8"/>
+                                <circle cx="42" cy="50" r="2.5" fill="#4DD768" opacity="0.8"/>
+                                <line x1="28" y1="22" x2="52" y2="22" stroke="#FF6B9D" stroke-width="2.5" stroke-linecap="round"/>
+                                <circle cx="40" cy="35" r="2" fill="#FF6B9D" opacity="0.3"/>
                             </svg>
                         </div>
                         <h3 class="learn-card__title">Ciencias Basicas</h3>
@@ -564,10 +775,17 @@
                         <div class="learn-card__glow"></div>
                         <div class="learn-card__icon">
                             <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
-                                <rect x="10" y="10" width="60" height="60" rx="15" fill="#37245F"/>
-                                <polygon points="40,22 22,52 58,52" fill="none" stroke="#FFD84A" stroke-width="2.5"/>
-                                <circle cx="40" cy="45" r="12" fill="none" stroke="#39C5FF" stroke-width="2"/>
-                                <rect x="30" y="35" width="20" height="20" fill="none" stroke="#4DD768" stroke-width="2" transform="rotate(15 40 45)"/>
+                                <defs>
+                                    <linearGradient id="learnGeoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" stop-color="#3d2a6b"/>
+                                        <stop offset="100%" stop-color="#37245F"/>
+                                    </linearGradient>
+                                </defs>
+                                <rect x="10" y="10" width="60" height="60" rx="15" fill="url(#learnGeoGrad)"/>
+                                <polygon points="40,20 20,54 60,54" fill="none" stroke="#FFD84A" stroke-width="2.5" stroke-linejoin="round"/>
+                                <circle cx="40" cy="44" r="12" fill="none" stroke="#39C5FF" stroke-width="2"/>
+                                <rect x="30" y="34" width="20" height="20" fill="none" stroke="#4DD768" stroke-width="2" transform="rotate(15 40 44)"/>
+                                <circle cx="40" cy="42" r="2" fill="#FFFFFF" opacity="0.15"/>
                             </svg>
                         </div>
                         <h3 class="learn-card__title">Geometria</h3>
@@ -870,15 +1088,15 @@
                     <p class="section-subtitle">9 areas de conocimiento disenadas para el curriculo de primaria.</p>
                 </div>
                 <div class="subjects__grid">
-                    <div class="subject-item" data-reveal><div class="subject-item__icon">Aa</div><h3>Letras y Alfabeto</h3><p>Vocales, consonantes, silabas y primera lectura.</p></div>
-                    <div class="subject-item" data-reveal><div class="subject-item__icon">123</div><h3>Numeros y Conteo</h3><p>Del 1 al 100, conteo, comparacion y operaciones basicas.</p></div>
-                    <div class="subject-item" data-reveal><div class="subject-item__icon">RGB</div><h3>Colores y Arte</h3><p>Identificacion de colores, mezcla y creacion artistica.</p></div>
-                    <div class="subject-item" data-reveal><div class="subject-item__icon">Zoo</div><h3>Animales</h3><p>Fauna del mundo, habitats, caracteristicas y sonidos.</p></div>
-                    <div class="subject-item" data-reveal><div class="subject-item__icon">Geo</div><h3>Figuras Geometricas</h3><p>Circulos, triangulos, cuadrados y formas en 3D.</p></div>
-                    <div class="subject-item" data-reveal><div class="subject-item__icon">Mem</div><h3>Memoria</h3><p>Juegos de memoria, secuencias y patrones logicos.</p></div>
-                    <div class="subject-item" data-reveal><div class="subject-item__icon">Log</div><h3>Logica</h3><p>Secuencias, clasificacion, seriar y resolucion de problemas.</p></div>
-                    <div class="subject-item" data-reveal><div class="subject-item__icon">Cie</div><h3>Ciencias Basicas</h3><p>Naturaleza, cuerpo humano, clima y fenomenos.</p></div>
-                    <div class="subject-item" data-reveal><div class="subject-item__icon">Mat</div><h3>Problemas Matematicos</h3><p>Suma, resta, multiplicacion y division con situaciones reales.</p></div>
+                    <div class="subject-item" data-reveal><div class="subject-item__icon"><svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><text x="20" y="27" text-anchor="middle" fill="#39C5FF" font-size="18" font-weight="700" font-family="Fredoka">Aa</text></svg></div><h3>Letras y Alfabeto</h3><p>Vocales, consonantes, silabas y primera lectura.</p></div>
+                    <div class="subject-item" data-reveal><div class="subject-item__icon"><svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><text x="20" y="28" text-anchor="middle" fill="#FFD84A" font-size="18" font-weight="700" font-family="Fredoka">123</text></svg></div><h3>Numeros y Conteo</h3><p>Del 1 al 100, conteo, comparacion y operaciones basicas.</p></div>
+                    <div class="subject-item" data-reveal><div class="subject-item__icon"><svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><circle cx="16" cy="18" r="6" fill="#FF6B6B" opacity="0.8"/><circle cx="24" cy="18" r="6" fill="#39C5FF" opacity="0.8"/><circle cx="20" cy="26" r="6" fill="#FFD84A" opacity="0.8"/></svg></div><h3>Colores y Arte</h3><p>Identificacion de colores, mezcla y creacion artistica.</p></div>
+                    <div class="subject-item" data-reveal><div class="subject-item__icon"><svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><ellipse cx="20" cy="24" rx="10" ry="8" fill="#4DD768"/><circle cx="15" cy="20" r="3" fill="#FFFFFF"/><circle cx="15.5" cy="19.5" r="1.5" fill="#08111D"/><circle cx="25" cy="20" r="3" fill="#FFFFFF"/><circle cx="25.5" cy="19.5" r="1.5" fill="#08111D"/><path d="M16 27 Q20 30 24 27" stroke="#08111D" stroke-width="1" fill="none" stroke-linecap="round"/></svg></div><h3>Animales</h3><p>Fauna del mundo, habitats, caracteristicas y sonidos.</p></div>
+                    <div class="subject-item" data-reveal><div class="subject-item__icon"><svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><polygon points="20,8 8,32 32,32" fill="none" stroke="#FFD84A" stroke-width="2" stroke-linejoin="round"/><circle cx="20" cy="24" r="8" fill="none" stroke="#39C5FF" stroke-width="2"/></svg></div><h3>Figuras Geometricas</h3><p>Circulos, triangulos, cuadrados y formas en 3D.</p></div>
+                    <div class="subject-item" data-reveal><div class="subject-item__icon"><svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><circle cx="14" cy="20" r="6" fill="none" stroke="#4DD768" stroke-width="2"/><circle cx="26" cy="20" r="6" fill="none" stroke="#39C5FF" stroke-width="2"/><path d="M14 20 Q20 26 26 20" stroke="#FFD84A" stroke-width="1.5" fill="none"/></svg></div><h3>Memoria</h3><p>Juegos de memoria, secuencias y patrones logicos.</p></div>
+                    <div class="subject-item" data-reveal><div class="subject-item__icon"><svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M12 28 L12 18 L18 12 L24 18 L24 28" stroke="#39C5FF" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="18" r="2" fill="#39C5FF"/><circle cx="18" cy="12" r="2" fill="#39C5FF"/><circle cx="24" cy="18" r="2" fill="#39C5FF"/><line x1="28" y1="16" x2="28" y2="28" stroke="#4DD768" stroke-width="2" stroke-linecap="round"/><line x1="26" y1="22" x2="30" y2="22" stroke="#4DD768" stroke-width="2" stroke-linecap="round"/></svg></div><h3>Logica</h3><p>Secuencias, clasificacion, seriar y resolucion de problemas.</p></div>
+                    <div class="subject-item" data-reveal><div class="subject-item__icon"><svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M16 12 L16 26 L10 34 L30 34 L24 26 L24 12 Z" fill="none" stroke="#FF6B9D" stroke-width="2"/><circle cx="18" cy="30" r="2" fill="#39C5FF" opacity="0.8"/><circle cx="24" cy="28" r="1.5" fill="#4DD768" opacity="0.8"/><line x1="12" y1="12" x2="28" y2="12" stroke="#FF6B9D" stroke-width="2" stroke-linecap="round"/></svg></div><h3>Ciencias Basicas</h3><p>Naturaleza, cuerpo humano, clima y fenomenos.</p></div>
+                    <div class="subject-item" data-reveal><div class="subject-item__icon"><svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M10 30 L10 16 L16 10 L22 16 L22 30" stroke="#FFD84A" stroke-width="2" fill="none" stroke-linecap="round"/><line x1="10" y1="30" x2="22" y2="30" stroke="#FFD84A" stroke-width="2" stroke-linecap="round"/><circle cx="10" cy="16" r="2" fill="#FFD84A"/><circle cx="16" cy="10" r="2" fill="#FFD84A"/><circle cx="22" cy="16" r="2" fill="#FFD84A"/><path d="M26 20 L26 30 L32 24 L38 30 L38 20" stroke="#39C5FF" stroke-width="1.5" fill="none" stroke-linecap="round"/></svg></div><h3>Problemas Matematicos</h3><p>Suma, resta, multiplicacion y division con situaciones reales.</p></div>
                 </div>
             </div>
         </section>
@@ -897,9 +1115,18 @@
                     <div class="reward-card" data-reveal>
                         <div class="reward-card__icon">
                             <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="40" cy="40" r="36" fill="#FFD84A"/>
-                                <circle cx="40" cy="40" r="28" fill="#E8B830"/>
-                                <text x="40" y="48" text-anchor="middle" fill="#FFD84A" font-size="28" font-weight="700" font-family="Fredoka">$</text>
+                                <defs>
+                                    <radialGradient id="coinGrad" cx="35%" cy="35%" r="65%">
+                                        <stop offset="0%" stop-color="#FFE88A"/>
+                                        <stop offset="100%" stop-color="#E8B830"/>
+                                    </radialGradient>
+                                </defs>
+                                <circle cx="40" cy="40" r="36" fill="#FFD84A" opacity="0.2"/>
+                                <circle cx="40" cy="40" r="32" fill="url(#coinGrad)"/>
+                                <circle cx="40" cy="40" r="26" fill="#D4A520" opacity="0.4"/>
+                                <circle cx="40" cy="40" r="24" fill="none" stroke="#FFE88A" stroke-width="1.5" opacity="0.5"/>
+                                <text x="40" y="48" text-anchor="middle" fill="#8B6914" font-size="26" font-weight="700" font-family="Fredoka">$</text>
+                                <ellipse cx="32" cy="32" rx="8" ry="5" fill="#FFE88A" opacity="0.3" transform="rotate(-30 32 32)"/>
                             </svg>
                         </div>
                         <h3 class="reward-card__title">Monedas Doradas</h3>
@@ -908,12 +1135,21 @@
                     <div class="reward-card" data-reveal>
                         <div class="reward-card__icon">
                             <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M25 20 L25 40 Q25 55 40 60 Q55 55 55 40 L55 20 Z" fill="#FFD84A"/>
-                                <rect x="20" y="55" width="40" height="6" rx="2" fill="#E8B830"/>
-                                <rect x="30" y="61" width="20" height="8" rx="2" fill="#C9A020"/>
-                                <path d="M25 20 Q15 20 12 30 Q9 40 20 42 L25 40" fill="#E8B830"/>
-                                <path d="M55 20 Q65 20 68 30 Q71 40 60 42 L55 40" fill="#E8B830"/>
-                                <text x="40" y="42" text-anchor="middle" fill="#FFFFFF" font-size="14" font-weight="700">*</text>
+                                <defs>
+                                    <linearGradient id="trophyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" stop-color="#FFE88A"/>
+                                        <stop offset="50%" stop-color="#FFD84A"/>
+                                        <stop offset="100%" stop-color="#D4A520"/>
+                                    </linearGradient>
+                                </defs>
+                                <path d="M26 18 L26 40 Q26 55 40 60 Q54 55 54 40 L54 18 Z" fill="url(#trophyGrad)"/>
+                                <path d="M26 18 Q26 18 24 28 Q22 38 28 42" fill="#D4A520" opacity="0.5"/>
+                                <path d="M54 18 Q54 18 56 28 Q58 38 52 42" fill="#D4A520" opacity="0.5"/>
+                                <rect x="20" y="55" width="40" height="6" rx="2" fill="#C9A020"/>
+                                <rect x="30" y="61" width="20" height="8" rx="2" fill="#B8901A"/>
+                                <circle cx="40" cy="36" r="8" fill="#FFE88A" opacity="0.5"/>
+                                <polygon points="40,28 42,34 48,34 43,38 45,44 40,40 35,44 37,38 32,34 38,34" fill="#FFFFFF" opacity="0.8"/>
+                                <ellipse cx="34" cy="30" rx="4" ry="3" fill="#FFE88A" opacity="0.3" transform="rotate(-20 34 30)"/>
                             </svg>
                         </div>
                         <h3 class="reward-card__title">Trofeos</h3>
@@ -922,8 +1158,16 @@
                     <div class="reward-card" data-reveal>
                         <div class="reward-card__icon">
                             <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
-                                <polygon points="40,8 47,30 70,30 52,44 58,66 40,54 22,66 28,44 10,30 33,30" fill="#FFD84A"/>
-                                <polygon points="40,16 45,30 60,30 48,40 52,56 40,48 28,56 32,40 20,30 35,30" fill="#FFE88A"/>
+                                <defs>
+                                    <linearGradient id="starGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" stop-color="#FFE88A"/>
+                                        <stop offset="100%" stop-color="#FFD84A"/>
+                                    </linearGradient>
+                                </defs>
+                                <polygon points="40,6 48,28 72,28 53,42 60,66 40,52 20,66 27,42 8,28 32,28" fill="url(#starGrad)"/>
+                                <polygon points="40,14 46,28 62,28 49,38 54,56 40,46 26,56 31,38 18,28 34,28" fill="#FFF3C4" opacity="0.5"/>
+                                <polygon points="40,22 44,30 52,30 46,35 48,44 40,39 32,44 34,35 28,30 36,30" fill="#FFFFFF" opacity="0.3"/>
+                                <circle cx="40" cy="34" r="3" fill="#FFFFFF" opacity="0.4"/>
                             </svg>
                         </div>
                         <h3 class="reward-card__title">Estrellas Brillantes</h3>
@@ -932,10 +1176,18 @@
                     <div class="reward-card" data-reveal>
                         <div class="reward-card__icon">
                             <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="40" cy="32" r="22" fill="#39C5FF"/>
-                                <circle cx="40" cy="32" r="16" fill="#2BA8D9"/>
+                                <defs>
+                                    <linearGradient id="badgeGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                                        <stop offset="0%" stop-color="#4AD4FF"/>
+                                        <stop offset="100%" stop-color="#39C5FF"/>
+                                    </linearGradient>
+                                </defs>
+                                <circle cx="40" cy="30" r="24" fill="url(#badgeGrad)"/>
+                                <circle cx="40" cy="30" r="18" fill="#2BA8D9" opacity="0.4"/>
                                 <polygon points="40,54 30,48 26,58 40,52 54,58 50,48" fill="#FFD84A"/>
-                                <text x="40" y="37" text-anchor="middle" fill="#FFFFFF" font-size="16" font-weight="700">*</text>
+                                <polygon points="40,14 43,22 52,22 45,27 47,36 40,31 33,36 35,27 28,22 37,22" fill="#FFFFFF" opacity="0.5"/>
+                                <circle cx="40" cy="26" r="5" fill="#FFFFFF" opacity="0.3"/>
+                                <circle cx="36" cy="24" r="1.5" fill="#FFFFFF" opacity="0.5"/>
                             </svg>
                         </div>
                         <h3 class="reward-card__title">Insignias</h3>
@@ -944,14 +1196,22 @@
                     <div class="reward-card" data-reveal>
                         <div class="reward-card__icon">
                             <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
-                                <ellipse cx="40" cy="50" rx="18" ry="14" fill="#4DD768"/>
-                                <circle cx="34" cy="42" r="5" fill="#FFFFFF"/>
-                                <circle cx="35" cy="41" r="2.5" fill="#08111D"/>
-                                <circle cx="46" cy="42" r="5" fill="#FFFFFF"/>
-                                <circle cx="47" cy="41" r="2.5" fill="#08111D"/>
-                                <rect x="28" y="24" width="24" height="16" rx="3" fill="#37245F"/>
-                                <rect x="22" y="38" width="36" height="4" rx="2" fill="#37245F"/>
-                                <rect x="30" y="26" width="20" height="2" rx="1" fill="#FFD84A"/>
+                                <!-- Mini rana -->
+                                <ellipse cx="40" cy="52" rx="16" ry="13" fill="#4DD768"/>
+                                <ellipse cx="40" cy="54" rx="12" ry="10" fill="#2F8F4E"/>
+                                <circle cx="34" cy="44" r="5" fill="#FFFFFF"/>
+                                <circle cx="35" cy="43" r="2.5" fill="#08111D"/>
+                                <circle cx="36" cy="42" r="1" fill="#FFFFFF"/>
+                                <circle cx="46" cy="44" r="5" fill="#FFFFFF"/>
+                                <circle cx="47" cy="43" r="2.5" fill="#08111D"/>
+                                <circle cx="48" cy="42" r="1" fill="#FFFFFF"/>
+                                <path d="M36 56 Q40 60 44 56" stroke="#08111D" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+                                <!-- Sombrero de copa -->
+                                <rect x="28" y="22" width="24" height="16" rx="3" fill="#37245F"/>
+                                <rect x="22" y="36" width="36" height="5" rx="2" fill="#37245F"/>
+                                <rect x="30" y="24" width="20" height="2.5" rx="1" fill="#FFD84A"/>
+                                <!-- Bola del sombrero -->
+                                <circle cx="40" cy="20" r="3" fill="#FF6B9D" opacity="0.8"/>
                             </svg>
                         </div>
                         <h3 class="reward-card__title">Sombreros Divertidos</h3>
@@ -960,12 +1220,25 @@
                     <div class="reward-card" data-reveal>
                         <div class="reward-card__icon">
                             <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
-                                <rect x="5" y="5" width="70" height="50" rx="5" fill="#37245F" opacity="0.5"/>
-                                <circle cx="60" cy="18" r="8" fill="#FFD84A" opacity="0.6"/>
-                                <path d="M5 45 Q20 30 35 40 Q50 25 75 35 L75 55 L5 55 Z" fill="#2F8F4E" opacity="0.6"/>
-                                <path d="M5 50 Q30 38 50 45 Q65 35 75 42 L75 55 L5 55 Z" fill="#4DD768" opacity="0.5"/>
-                                <rect x="32" y="35" width="16" height="20" rx="8" fill="#FFD84A" opacity="0.8"/>
-                                <circle cx="44" cy="47" r="1.5" fill="#E8B830"/>
+                                <!-- Cielo -->
+                                <rect x="5" y="5" width="70" height="50" rx="6" fill="#1a1a3e"/>
+                                <!-- Luna -->
+                                <circle cx="58" cy="16" r="6" fill="#FFD84A" opacity="0.7"/>
+                                <circle cx="56" cy="14" r="2" fill="#FFE88A" opacity="0.3"/>
+                                <!-- Estrellas -->
+                                <circle cx="20" cy="14" r="1" fill="#FFFFFF" opacity="0.6"/>
+                                <circle cx="35" cy="10" r="0.8" fill="#FFFFFF" opacity="0.4"/>
+                                <circle cx="48" cy="18" r="0.6" fill="#FFFFFF" opacity="0.5"/>
+                                <!-- Montanas -->
+                                <path d="M5 45 Q15 30 25 38 Q35 25 50 35 Q60 28 75 35 L75 55 L5 55 Z" fill="#2F8F4E" opacity="0.6"/>
+                                <path d="M5 50 Q20 38 40 45 Q55 35 75 42 L75 55 L5 55 Z" fill="#4DD768" opacity="0.5"/>
+                                <!-- Puerta magica -->
+                                <rect x="32" y="32" width="16" height="23" rx="8" fill="#FFD84A" opacity="0.8"/>
+                                <rect x="34" y="34" width="12" height="19" rx="6" fill="#FFE88A" opacity="0.4"/>
+                                <circle cx="44" cy="45" r="1.5" fill="#D4A520"/>
+                                <!-- Brillo -->
+                                <circle cx="40" cy="30" r="2" fill="#FFD84A" opacity="0.3"/>
+                                <circle cx="36" cy="28" r="1" fill="#FFFFFF" opacity="0.2"/>
                             </svg>
                         </div>
                         <h3 class="reward-card__title">Escenarios Nuevos</h3>
@@ -1092,17 +1365,41 @@
                     </div>
                     <div class="cta-section__frog">
                         <svg viewBox="0 0 100 110" xmlns="http://www.w3.org/2000/svg">
-                            <ellipse cx="50" cy="72" rx="28" ry="25" fill="#4DD768"/>
-                            <ellipse cx="50" cy="76" rx="22" ry="20" fill="#2F8F4E"/>
-                            <circle cx="38" cy="55" r="10" fill="#FFFFFF"/>
-                            <circle cx="39" cy="54" r="5.5" fill="#08111D"/>
-                            <circle cx="41" cy="52" r="2" fill="#FFFFFF"/>
-                            <circle cx="62" cy="55" r="10" fill="#FFFFFF"/>
-                            <circle cx="63" cy="54" r="5.5" fill="#08111D"/>
-                            <circle cx="65" cy="52" r="2" fill="#FFFFFF"/>
-                            <path d="M42 80 Q50 88 58 80" stroke="#08111D" stroke-width="2" fill="none" stroke-linecap="round"/>
-                            <circle cx="30" cy="75" r="3.5" fill="#FF6B9D" opacity="0.3"/>
-                            <circle cx="70" cy="75" r="3.5" fill="#FF6B9D" opacity="0.3"/>
+                            <defs>
+                                <radialGradient id="ctaFrogBody" cx="50%" cy="40%" r="55%">
+                                    <stop offset="0%" stop-color="#5AE87A"/>
+                                    <stop offset="100%" stop-color="#4DD768"/>
+                                </radialGradient>
+                                <radialGradient id="ctaFrogCheek" cx="50%" cy="50%" r="50%">
+                                    <stop offset="0%" stop-color="#FF6B9D" stop-opacity="0.5"/>
+                                    <stop offset="100%" stop-color="#FF6B9D" stop-opacity="0"/>
+                                </radialGradient>
+                            </defs>
+                            <!-- Cuerpo -->
+                            <ellipse cx="50" cy="75" rx="28" ry="25" fill="url(#ctaFrogBody)"/>
+                            <ellipse cx="50" cy="78" rx="22" ry="20" fill="#2F8F4E"/>
+                            <!-- Manos -->
+                            <ellipse cx="22" cy="80" rx="8" ry="5" fill="#4DD768" transform="rotate(-15 22 80)"/>
+                            <ellipse cx="78" cy="80" rx="8" ry="5" fill="#4DD768" transform="rotate(15 78 80)"/>
+                            <!-- Ojos -->
+                            <circle cx="36" cy="55" r="12" fill="#FFFFFF"/>
+                            <circle cx="64" cy="55" r="12" fill="#FFFFFF"/>
+                            <circle cx="37" cy="54" r="6.5" fill="#08111D"/>
+                            <circle cx="65" cy="54" r="6.5" fill="#08111D"/>
+                            <circle cx="39" cy="51" r="2.5" fill="#FFFFFF"/>
+                            <circle cx="67" cy="51" r="2.5" fill="#FFFFFF"/>
+                            <!-- Cejas -->
+                            <path d="M24 44 Q36 38 44 44" stroke="#2F8F4E" stroke-width="2" fill="none" stroke-linecap="round"/>
+                            <path d="M56 44 Q64 38 76 44" stroke="#2F8F4E" stroke-width="2" fill="none" stroke-linecap="round"/>
+                            <!-- Boca -->
+                            <path d="M38 82 Q50 92 62 82" stroke="#08111D" stroke-width="2" fill="none" stroke-linecap="round"/>
+                            <!-- Mejillas -->
+                            <circle cx="26" cy="70" r="5" fill="url(#ctaFrogCheek)"/>
+                            <circle cx="74" cy="70" r="5" fill="url(#ctaFrogCheek)"/>
+                            <!-- Brillos -->
+                            <circle cx="28" cy="50" r="1" fill="#FFD84A" opacity="0.4"/>
+                            <circle cx="72" cy="48" r="1.2" fill="#39C5FF" opacity="0.4"/>
+                            <circle cx="50" cy="38" r="0.8" fill="#FFFFFF" opacity="0.3"/>
                         </svg>
                     </div>
                     <h2 class="cta-section__title">Listo para la aventura?</h2>
@@ -1153,15 +1450,29 @@
                 <div class="footer__brand">
                     <a href="#" class="footer__logo" aria-label="Rana Aventura">
                         <svg viewBox="0 0 48 48" width="36" height="36" xmlns="http://www.w3.org/2000/svg">
-                            <ellipse cx="24" cy="28" rx="16" ry="14" fill="#4DD768"/>
-                            <ellipse cx="24" cy="30" rx="13" ry="11" fill="#2F8F4E"/>
-                            <circle cx="17" cy="20" r="7" fill="#FFFFFF"/>
-                            <circle cx="18" cy="19" r="4" fill="#08111D"/>
-                            <circle cx="19" cy="18" r="1.5" fill="#FFFFFF"/>
-                            <circle cx="31" cy="20" r="7" fill="#FFFFFF"/>
-                            <circle cx="32" cy="19" r="4" fill="#08111D"/>
-                            <circle cx="33" cy="18" r="1.5" fill="#FFFFFF"/>
-                            <path d="M18 32 Q24 38 30 32" stroke="#08111D" stroke-width="2" fill="none" stroke-linecap="round"/>
+                            <defs>
+                                <radialGradient id="ftFrogBody" cx="50%" cy="40%" r="55%">
+                                    <stop offset="0%" stop-color="#5AE87A"/>
+                                    <stop offset="100%" stop-color="#4DD768"/>
+                                </radialGradient>
+                                <radialGradient id="ftFrogCheek" cx="50%" cy="50%" r="50%">
+                                    <stop offset="0%" stop-color="#FF6B9D" stop-opacity="0.45"/>
+                                    <stop offset="100%" stop-color="#FF6B9D" stop-opacity="0"/>
+                                </radialGradient>
+                            </defs>
+                            <ellipse cx="24" cy="30" rx="16" ry="14" fill="url(#ftFrogBody)"/>
+                            <ellipse cx="24" cy="32" rx="13" ry="11" fill="#2F8F4E"/>
+                            <circle cx="17" cy="21" r="7" fill="#FFFFFF"/>
+                            <circle cx="31" cy="21" r="7" fill="#FFFFFF"/>
+                            <circle cx="18" cy="20" r="4" fill="#08111D"/>
+                            <circle cx="32" cy="20" r="4" fill="#08111D"/>
+                            <circle cx="19.5" cy="18.5" r="1.5" fill="#FFFFFF"/>
+                            <circle cx="33.5" cy="18.5" r="1.5" fill="#FFFFFF"/>
+                            <circle cx="17" cy="21" r="0.8" fill="#FFFFFF" opacity="0.4"/>
+                            <circle cx="31" cy="21" r="0.8" fill="#FFFFFF" opacity="0.4"/>
+                            <path d="M17 34 Q24 40 31 34" stroke="#08111D" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+                            <circle cx="13" cy="32" r="3" fill="url(#ftFrogCheek)"/>
+                            <circle cx="35" cy="32" r="3" fill="url(#ftFrogCheek)"/>
                         </svg>
                         <span>Rana Aventura</span>
                     </a>
