@@ -1677,3 +1677,810 @@ section {
   font-size: 0.8rem;
   color: var(--text-secondary);
 }
+
+/* ============================================
+   FASE 2 - MEJORAS VISUALES COMPLETAS
+   ============================================ */
+
+/* ----------------------------------------
+   SCROLL REVEAL - Estados base
+   ---------------------------------------- */
+[data-reveal] {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s var(--ease-smooth), transform 0.8s var(--ease-smooth);
+}
+
+[data-reveal].revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Variantes de reveal */
+[data-reveal="left"] {
+  transform: translateX(-40px);
+}
+
+[data-reveal="left"].revealed {
+  transform: translateX(0);
+}
+
+[data-reveal="right"] {
+  transform: translateX(40px);
+}
+
+[data-reveal="right"].revealed {
+  transform: translateX(0);
+}
+
+[data-reveal="scale"] {
+  transform: scale(0.9);
+}
+
+[data-reveal="scale"].revealed {
+  transform: scale(1);
+}
+
+/* Stagger para grids */
+.features__grid [data-reveal]:nth-child(1) { transition-delay: 0.05s; }
+.features__grid [data-reveal]:nth-child(2) { transition-delay: 0.1s; }
+.features__grid [data-reveal]:nth-child(3) { transition-delay: 0.15s; }
+.features__grid [data-reveal]:nth-child(4) { transition-delay: 0.2s; }
+.features__grid [data-reveal]:nth-child(5) { transition-delay: 0.25s; }
+.features__grid [data-reveal]:nth-child(6) { transition-delay: 0.3s; }
+
+.learn__grid [data-reveal]:nth-child(1) { transition-delay: 0.05s; }
+.learn__grid [data-reveal]:nth-child(2) { transition-delay: 0.1s; }
+.learn__grid [data-reveal]:nth-child(3) { transition-delay: 0.15s; }
+.learn__grid [data-reveal]:nth-child(4) { transition-delay: 0.2s; }
+.learn__grid [data-reveal]:nth-child(5) { transition-delay: 0.25s; }
+.learn__grid [data-reveal]:nth-child(6) { transition-delay: 0.3s; }
+
+.subjects__grid [data-reveal]:nth-child(1) { transition-delay: 0.03s; }
+.subjects__grid [data-reveal]:nth-child(2) { transition-delay: 0.06s; }
+.subjects__grid [data-reveal]:nth-child(3) { transition-delay: 0.09s; }
+.subjects__grid [data-reveal]:nth-child(4) { transition-delay: 0.12s; }
+.subjects__grid [data-reveal]:nth-child(5) { transition-delay: 0.15s; }
+.subjects__grid [data-reveal]:nth-child(6) { transition-delay: 0.18s; }
+.subjects__grid [data-reveal]:nth-child(7) { transition-delay: 0.21s; }
+.subjects__grid [data-reveal]:nth-child(8) { transition-delay: 0.24s; }
+.subjects__grid [data-reveal]:nth-child(9) { transition-delay: 0.27s; }
+
+.rewards__grid [data-reveal]:nth-child(1) { transition-delay: 0.05s; }
+.rewards__grid [data-reveal]:nth-child(2) { transition-delay: 0.1s; }
+.rewards__grid [data-reveal]:nth-child(3) { transition-delay: 0.15s; }
+.rewards__grid [data-reveal]:nth-child(4) { transition-delay: 0.2s; }
+.rewards__grid [data-reveal]:nth-child(5) { transition-delay: 0.25s; }
+.rewards__grid [data-reveal]:nth-child(6) { transition-delay: 0.3s; }
+
+.faq__list [data-reveal]:nth-child(1) { transition-delay: 0.05s; }
+.faq__list [data-reveal]:nth-child(2) { transition-delay: 0.1s; }
+.faq__list [data-reveal]:nth-child(3) { transition-delay: 0.15s; }
+.faq__list [data-reveal]:nth-child(4) { transition-delay: 0.2s; }
+.faq__list [data-reveal]:nth-child(5) { transition-delay: 0.25s; }
+.faq__list [data-reveal]:nth-child(6) { transition-delay: 0.3s; }
+
+.game-map__step:nth-child(2) { transition-delay: 0.1s; }
+.game-map__step:nth-child(3) { transition-delay: 0.2s; }
+.game-map__step:nth-child(4) { transition-delay: 0.3s; }
+.game-map__step:nth-child(5) { transition-delay: 0.4s; }
+
+/* ----------------------------------------
+   GLASSMORPHISM - Navbar mejorado
+   ---------------------------------------- */
+.navbar {
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+}
+
+.navbar.scrolled {
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  background: rgba(8,17,29,0.75);
+  box-shadow: 0 4px 30px rgba(0,0,0,0.3);
+}
+
+/* ----------------------------------------
+   BOTONES - Glow pulsante y efectos
+   ---------------------------------------- */
+.btn--primary {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn--primary::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(255,255,255,0.2) 0%, transparent 50%);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.btn--primary:hover::before {
+  opacity: 1;
+}
+
+.btn--primary::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255,255,255,0.15) 0%, transparent 60%);
+  opacity: 0;
+  transition: opacity 0.4s;
+  pointer-events: none;
+}
+
+.btn--primary:hover::after {
+  opacity: 1;
+}
+
+.btn--secondary {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn--secondary::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(255,255,255,0.05) 0%, transparent 50%);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.btn--secondary:hover::before {
+  opacity: 1;
+}
+
+.btn--store {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn--store::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.05), transparent);
+  transition: left 0.5s;
+}
+
+.btn--store:hover::before {
+  left: 100%;
+}
+
+/* ----------------------------------------
+   HERO - Mejoras de profundidad
+   ---------------------------------------- */
+.hero::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 40%;
+  background: linear-gradient(180deg, transparent 0%, rgba(8,17,29,0.6) 100%);
+  z-index: 15;
+  pointer-events: none;
+}
+
+.hero__content {
+  text-shadow: 0 2px 20px rgba(0,0,0,0.5);
+}
+
+.hero__title {
+  text-shadow: 0 4px 30px rgba(0,0,0,0.3);
+}
+
+.hero__badge {
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.hero__scroll-indicator {
+  animation: fadeInUp 1s 2s both;
+}
+
+/* ----------------------------------------
+   SECCIONES - Patrones de fondo
+   ---------------------------------------- */
+.features::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background:
+    radial-gradient(circle at 20% 30%, rgba(55,36,95,0.3) 0%, transparent 50%),
+    radial-gradient(circle at 80% 70%, rgba(57,197,255,0.05) 0%, transparent 40%);
+  pointer-events: none;
+}
+
+.learn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background:
+    radial-gradient(circle at 80% 20%, rgba(77,215,104,0.05) 0%, transparent 40%),
+    radial-gradient(circle at 20% 80%, rgba(55,36,95,0.2) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+.parents::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at 10% 50%, rgba(57,197,255,0.06) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+.teachers::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at 90% 50%, rgba(77,215,104,0.06) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+.how-it-works::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background:
+    radial-gradient(circle at 50% 20%, rgba(255,216,74,0.04) 0%, transparent 40%),
+    radial-gradient(circle at 50% 80%, rgba(55,36,95,0.2) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+.subjects::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at 50% 50%, rgba(57,197,255,0.03) 0%, transparent 60%);
+  pointer-events: none;
+}
+
+.rewards::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background:
+    radial-gradient(circle at 30% 30%, rgba(255,216,74,0.05) 0%, transparent 40%),
+    radial-gradient(circle at 70% 70%, rgba(55,36,95,0.3) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+.stats::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg,
+    transparent 0%,
+    rgba(57,197,255,0.03) 50%,
+    transparent 100%
+  );
+  pointer-events: none;
+}
+
+.faq::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at 50% 30%, rgba(55,36,95,0.2) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+/* ----------------------------------------
+   CARDS - Efectos hover avanzados
+   ---------------------------------------- */
+.feature-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.feature-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: var(--gradient-primary);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s var(--ease-smooth);
+}
+
+.feature-card:hover::before {
+  transform: scaleX(1);
+}
+
+.feature-card::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(57,197,255,0.03) 0%, transparent 50%);
+  opacity: 0;
+  transition: opacity 0.5s;
+  pointer-events: none;
+}
+
+.feature-card:hover::after {
+  opacity: 1;
+}
+
+.learn-card {
+  position: relative;
+}
+
+.learn-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, var(--blue), var(--green));
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s var(--ease-smooth);
+}
+
+.learn-card:hover::before {
+  transform: scaleX(1);
+}
+
+.reward-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.reward-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, var(--yellow), var(--pink));
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s var(--ease-smooth);
+}
+
+.reward-card:hover::before {
+  transform: scaleX(1);
+}
+
+.reward-card::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 50% 0%, rgba(255,216,74,0.05) 0%, transparent 60%);
+  opacity: 0;
+  transition: opacity 0.5s;
+  pointer-events: none;
+}
+
+.reward-card:hover::after {
+  opacity: 1;
+}
+
+.subject-item {
+  position: relative;
+  overflow: hidden;
+}
+
+.subject-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(57,197,255,0.05) 0%, transparent 100%);
+  opacity: 0;
+  transition: opacity 0.3s;
+  pointer-events: none;
+}
+
+.subject-item:hover::before {
+  opacity: 1;
+}
+
+/* ----------------------------------------
+   MOCKUP - Efectos de profundidad
+   ---------------------------------------- */
+.phone-mockup__frame {
+  position: relative;
+}
+
+.phone-mockup__frame::before {
+  content: '';
+  position: absolute;
+  inset: -2px;
+  border-radius: 38px;
+  background: linear-gradient(135deg, rgba(57,197,255,0.3), rgba(77,215,104,0.1), rgba(255,216,74,0.1));
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.parents__mockup:hover .phone-mockup__frame::before {
+  opacity: 1;
+}
+
+.monitor-mockup__screen {
+  position: relative;
+}
+
+.monitor-mockup__screen::before {
+  content: '';
+  position: absolute;
+  inset: -2px;
+  border-radius: 14px;
+  background: linear-gradient(135deg, rgba(77,215,104,0.2), rgba(57,197,255,0.1));
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.teachers__mockup:hover .monitor-mockup__screen::before {
+  opacity: 1;
+}
+
+/* ----------------------------------------
+   GAME MAP - Nodos mejorados
+   ---------------------------------------- */
+.game-map__node-icon {
+  position: relative;
+  transition: var(--transition-base);
+}
+
+.game-map__step:hover .game-map__node-icon {
+  transform: scale(1.1);
+  border-color: rgba(57,197,255,0.3);
+  box-shadow: 0 0 30px rgba(57,197,255,0.2);
+}
+
+.game-map__node-glow {
+  transition: opacity 0.5s;
+  opacity: 0.5;
+}
+
+.game-map__step:hover .game-map__node-glow {
+  opacity: 1;
+}
+
+/* ----------------------------------------
+   FAQ - Efectos mejorados
+   ---------------------------------------- */
+.faq__item {
+  position: relative;
+}
+
+.faq__item::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 3px;
+  height: 100%;
+  background: var(--gradient-primary);
+  border-radius: 2px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.faq__item.active::before {
+  opacity: 1;
+}
+
+.faq__question {
+  transition: var(--transition-base);
+}
+
+.faq__question:hover {
+  color: var(--blue);
+}
+
+/* ----------------------------------------
+   CTA - Efectos de fondo
+   ---------------------------------------- */
+.cta-section__inner {
+  position: relative;
+  overflow: hidden;
+}
+
+.cta-section__inner::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle at 30% 40%, rgba(77,215,104,0.08) 0%, transparent 50%);
+  animation: ctaGlow 8s ease-in-out infinite alternate;
+  pointer-events: none;
+}
+
+.cta-section__inner::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle at 70% 60%, rgba(57,197,255,0.06) 0%, transparent 50%);
+  animation: ctaGlow 8s 4s ease-in-out infinite alternate;
+  pointer-events: none;
+}
+
+@keyframes ctaGlow {
+  0% { transform: translate(0, 0); }
+  100% { transform: translate(5%, 5%); }
+}
+
+/* ----------------------------------------
+   STATS - Linea decorativa
+   ---------------------------------------- */
+.stats__grid {
+  position: relative;
+}
+
+.stats__grid::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.05), transparent);
+  transform: translateY(-50%);
+}
+
+/* ----------------------------------------
+   SECCION TAG - Efecto glow
+   ---------------------------------------- */
+.section-tag {
+  position: relative;
+  display: inline-block;
+}
+
+.section-tag::before {
+  content: '';
+  position: absolute;
+  inset: -4px -12px;
+  background: rgba(57,197,255,0.08);
+  border-radius: var(--radius-full);
+  z-index: -1;
+}
+
+/* ----------------------------------------
+   TITULOS - Sombra de texto mejorada
+   ---------------------------------------- */
+.section-title {
+  text-shadow: 0 2px 20px rgba(0,0,0,0.2);
+}
+
+.hero__title {
+  text-shadow: 0 4px 40px rgba(0,0,0,0.4);
+}
+
+/* ----------------------------------------
+   FOOTER - Efectos
+   ---------------------------------------- */
+.footer {
+  position: relative;
+}
+
+.footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 200px;
+  height: 1px;
+  background: var(--gradient-primary);
+  opacity: 0.5;
+}
+
+.footer__social-link {
+  position: relative;
+  overflow: hidden;
+}
+
+.footer__social-link::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: var(--gradient-primary);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.footer__social-link:hover::before {
+  opacity: 0.15;
+}
+
+/* ----------------------------------------
+   NAVBAR TOGGLE - Animacion
+   ---------------------------------------- */
+.navbar__toggle.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.navbar__toggle.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.navbar__toggle.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* ----------------------------------------
+   MOBILE NAV - Estilos
+   ---------------------------------------- */
+.navbar__nav.active {
+  display: flex;
+}
+
+/* ----------------------------------------
+   TIPOGRAFIA - Jerarquia mejorada
+   ---------------------------------------- */
+.feature-card__title,
+.learn-card__title,
+.reward-card__title,
+.game-map__title,
+.subject-item h3 {
+  position: relative;
+}
+
+/* ----------------------------------------
+   FOCUS STATES - Accesibilidad
+   ---------------------------------------- */
+.btn:focus-visible,
+.navbar__link:focus-visible,
+.faq__question:focus-visible,
+.footer__social-link:focus-visible {
+  outline: 2px solid var(--blue);
+  outline-offset: 3px;
+}
+
+/* ----------------------------------------
+   PREFERS REDUCED MOTION
+   ---------------------------------------- */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  [data-reveal] {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* ----------------------------------------
+   SELECCION DE TEXTO
+   ---------------------------------------- */
+::selection {
+  background: rgba(57,197,255,0.3);
+  color: var(--white);
+}
+
+::-moz-selection {
+  background: rgba(57,197,255,0.3);
+  color: var(--white);
+}
+
+/* ----------------------------------------
+   SCROLLBAR PERSONALIZADA
+   ---------------------------------------- */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-deep);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--purple);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(57,197,255,0.4);
+}
+
+/* ----------------------------------------
+   ANIMACIONES CSS BASE (sin keyframes)
+   ---------------------------------------- */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.7; }
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+@keyframes glow {
+  0%, 100% { box-shadow: 0 0 20px rgba(57,197,255,0.2); }
+  50% { box-shadow: 0 0 40px rgba(57,197,255,0.4); }
+}
+
+@keyframes rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+}
