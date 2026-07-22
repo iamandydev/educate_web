@@ -240,57 +240,57 @@
       title: 'Centro de Ayuda',
       body: [
         '<h4>Descarga</h4>',
-        '<p><strong>Android:</strong> Descarga el APK desde la pagina oficial de Rana Aventura.</p>',
-        '<p><strong>Web:</strong> Accede desde el navegador en cualquier dispositivo con conexion a internet.</p>',
-        '<p><strong>Docentes (Escritorio):</strong> Descarga la app de escritorio desde el portal de la institucion.</p>',
+        '<p><strong>Android:</strong> Descarga el APK desde la página oficial de Rana Aventura.</p>',
+        '<p><strong>Web:</strong> Accede desde el navegador en cualquier dispositivo con conexión a internet.</p>',
+        '<p><strong>Docentes (Escritorio):</strong> Descarga la app de escritorio desde el portal de la institución.</p>',
         '<h4>Cuenta y acceso</h4>',
-        '<p>Los estudiantes reciben sus credenciales del docente. Si no puedes iniciar sesion, verifica con tu docente que tu usuario y contrasena sean correctos.</p>',
-        '<h4>Problemas tecnicos</h4>',
-        '<p>Si la app no carga o presenta errores, intenta cerrarla y abrirla de nuevo. Verifica tu conexion a internet (version web) o revisa que tengas almacenamiento disponible en tu dispositivo (app Android).</p>',
+        '<p>Los estudiantes reciben sus credenciales del docente. Si no puedes iniciar sesión, verifica con tu docente que tu usuario y contraseña sean correctos.</p>',
+        '<h4>Problemas técnicos</h4>',
+        '<p>Si la app no carga o presenta errores, intenta cerrarla y abrirla de nuevo. Verifica tu conexión a internet (versión web) o revisa que tengas almacenamiento disponible en tu dispositivo (app Android).</p>',
         '<h4>Contacto</h4>',
-        '<p>Para soporte adicional, contacta al equipo tecnico de la institucion o escribe a soporte@ranaaventura.com.</p>'
+        '<p>Para soporte adicional, contacta al equipo técnico de la institución o escribe a soporte@ranaaventura.com.</p>'
       ].join('')
     },
     privacidad: {
-      title: 'Politica de Privacidad',
+      title: 'Política de Privacidad',
       body: [
-        '<p><strong>Rana Aventura</strong> esta comprometido con la proteccion de la informacion de los estudiantes, docentes y familias.</p>',
+        '<p><strong>Rana Aventura</strong> está comprometido con la protección de la información de los estudiantes, docentes y familias.</p>',
         '<h4>Datos que recopilamos</h4>',
         '<ul>',
         '<li>Nombres y datos de los estudiantes (creados por el docente)</li>',
         '<li>Progreso de aprendizaje y actividades completadas</li>',
-        '<li>Informacion de la institucion educativa</li>',
+        '<li>Información de la institución educativa</li>',
         '</ul>',
-        '<h4>Donde se almacenan los datos</h4>',
-        '<p>Toda la informacion se guarda en un servidor privado, accesible unicamente por la institucion educativa y el equipo de desarrollo de Rana Aventura.</p>',
-        '<h4>Comparticion con terceros</h4>',
-        '<p><strong>No compartimos datos con terceros.</strong> No se vende, alquila ni comparte informacion con personas o empresas fuera de la institucion educativa.</p>',
+        '<h4>Dónde se almacenan los datos</h4>',
+        '<p>Toda la información se guarda en un servidor privado, accesible únicamente por la institución educativa y el equipo de desarrollo de Rana Aventura.</p>',
+        '<h4>Compartición con terceros</h4>',
+        '<p><strong>No compartimos datos con terceros.</strong> No se vende, alquila ni comparte información con personas o empresas fuera de la institución educativa.</p>',
         '<h4>Seguridad</h4>',
-        '<p>Se utilizan protocolos de seguridad y encriptacion para proteger la informacion almacenada en el servidor.</p>',
+        '<p>Se utilizan protocolos de seguridad y encriptación para proteger la información almacenada en el servidor.</p>',
         '<h4>Derechos</h4>',
-        '<p>La institucion educativa puede solicitar la eliminacion o modificacion de los datos de sus estudiantes en cualquier momento.</p>'
+        '<p>La institución educativa puede solicitar la eliminación o modificación de los datos de sus estudiantes en cualquier momento.</p>'
       ].join('')
     },
     terminos: {
-      title: 'Terminos y Condiciones',
+      title: 'Términos y Condiciones',
       body: [
-        '<p>El uso de la plataforma <strong>Rana Aventura</strong> esta sujeto a los siguientes terminos:</p>',
+        '<p>El uso de la plataforma <strong>Rana Aventura</strong> está sujeto a los siguientes términos:</p>',
         '<h4>Uso de la plataforma</h4>',
-        '<p>Rana Aventura es una herramienta educativa disenada para ser utilizada en el ambito escolar. El acceso esta restringido a estudiantes, docentes y personal autorizado de la institucion.</p>',
+        '<p>Rana Aventura es una herramienta educativa diseñada para ser utilizada en el ámbito escolar. El acceso está restringido a estudiantes, docentes y personal autorizado de la institución.</p>',
         '<h4>Cuentas</h4>',
         '<p>Las cuentas de los estudiantes son creadas por los docentes. El usuario es responsable de mantener la confidencialidad de sus credenciales de acceso.</p>',
         '<h4>Contenido</h4>',
-        '<p>El contenido educativo, actividades, niveles y materiales dentro de la plataforma son propiedad de Rana Aventura y la institucion. No esta permitido copiar, redistribuir o modificar el contenido sin autorizacion.</p>',
+        '<p>El contenido educativo, actividades, niveles y materiales dentro de la plataforma son propiedad de Rana Aventura y la institución. No está permitido copiar, redistribuir o modificar el contenido sin autorización.</p>',
         '<h4>Uso aceptable</h4>',
         '<ul>',
         '<li>No compartir credenciales con usuarios no autorizados</li>',
-        '<li>No intentar acceder a areas restringidas del servidor</li>',
+        '<li>No intentar acceder a áreas restringidas del servidor</li>',
         '<li>No modificar o manipular el contenido de la plataforma</li>',
         '</ul>',
         '<h4>Disponibilidad</h4>',
-        '<p>Rana Aventura esta en desarrollo activo. La disponibilidad del servicio puede variar. Se realizan actualizaciones periodicas que pueden afectar temporalmente el acceso.</p>',
-        '<h4>Limitacion de responsabilidad</h4>',
-        '<p>Rana Aventura no se responsabiliza por perdida de datos derivada del uso inadecuado de la plataforma o fallas en la conectividad del usuario.</p>'
+        '<p>Rana Aventura está en desarrollo activo. La disponibilidad del servicio puede variar. Se realizan actualizaciones periódicas que pueden afectar temporalmente el acceso.</p>',
+        '<h4>Limitación de responsabilidad</h4>',
+        '<p>Rana Aventura no se responsabiliza por pérdida de datos derivada del uso inadecuado de la plataforma o fallas en la conectividad del usuario.</p>'
       ].join('')
     }
   };
